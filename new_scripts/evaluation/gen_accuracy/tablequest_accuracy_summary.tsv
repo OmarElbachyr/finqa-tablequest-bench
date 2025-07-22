@@ -1,0 +1,9 @@
+dataset	parser	chunker	overlap	retriever	model	top_k	total_questions	correct_answers	accuracy	avg_confidence	avg_judgment_time
+tablequest	pdfminer	sentence	128	SpladeRetriever	llama3.2:3b	3	169	32	0.1893	0.9831	2.18
+tablequest	pdfminer	sentence	128	SpladeRetriever	gemma3:4b	1	169	35	0.2071	0.9781	2.09
+tablequest	pdfminer	sentence	128	SpladeRetriever	phi3:mini	1	169	31	0.1834	0.9719	2.14
+tablequest	pdfminer	sentence	128	SpladeRetriever	llama3.2:3b	1	169	39	0.2308	0.9731	2.29
+tablequest	pdfminer	sentence	128	SpladeRetriever	deepseek-r1:1.5b	1	169	17	0.1006	0.9586	2.43
+tablequest	pdfminer	sentence	128	SpladeRetriever	gemma3:4b	3	169	33	0.1953	0.9627	2.27
+tablequest	pdfminer	sentence	128	SpladeRetriever	phi3:mini	3	169	11	0.0651	0.9527	2.38
+tablequest	pdfminer	sentence	128	SpladeRetriever	deepseek-r1:1.5b	3	169	8	0.0473	0.9666	2.37

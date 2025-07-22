@@ -1,0 +1,15 @@
+{
+  "evaluation_metadata": {
+    "timestamp": "2025-07-18T18:42:53.698329",
+    "total_evaluated": 169,
+    "metrics": {
+      "total_questions": 169,
+      "correct_answers": 39,
+      "incorrect_answers": 130,
+      "error_answers": 0,
+      "accuracy": 0.23076923076923078,
+      "avg_confidence": 0.9730769230769234,
+      "avg_judgment_time": 2.288113189349113
+    }
+  }
+}

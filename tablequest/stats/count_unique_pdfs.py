@@ -132,7 +132,7 @@ def show_top_pdfs(stats):
     # Count pages for each PDF across all difficulties
     for difficulty in ['easy', 'medium', 'hard']:
         if difficulty in stats['by_difficulty']:
-            difficulty_path = f"/home/omar/projects/haystack/tablequest/sampled_pages_pdf/{difficulty}"
+            difficulty_path = f"tablequest/sampled_pages_pdf/{difficulty}"
             if os.path.exists(difficulty_path):
                 pdf_files = [f for f in os.listdir(difficulty_path) if f.endswith('.pdf')]
                 for pdf_file in pdf_files:
@@ -185,7 +185,7 @@ def quick_summary(stats):
 
 
 def main():
-    base_dir = "/home/omar/projects/haystack/tablequest/sampled_pages_pdf"
+    base_dir = "tablequest/sampled_pages_pdf"
     
     print(f"Analyzing unique PDFs in: {base_dir}")
     print("=" * 80)

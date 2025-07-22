@@ -1,0 +1,51 @@
+{
+  "dataset": "financebench",
+  "timestamp": "2025-07-17 03:42:36",
+  "total_files": 168,
+  "pages_dir": "new_scripts/data/extracted_pages_pdf",
+  "results_dir": "new_scripts/data/parsed_pages/financebench",
+  "timing_results": [
+    {
+      "parser": "pypdfium2",
+      "total_time": 0.4576742649078369,
+      "files_processed": 168,
+      "avg_per_file": 0.0027242515768323627,
+      "total_with_overhead": 0.45875978469848633
+    },
+    {
+      "parser": "pymupdf",
+      "total_time": 0.6214883327484131,
+      "files_processed": 168,
+      "avg_per_file": 0.0036993353139786493,
+      "total_with_overhead": 0.6226723194122314
+    },
+    {
+      "parser": "pypdf2",
+      "total_time": 5.91473913192749,
+      "files_processed": 168,
+      "avg_per_file": 0.03520678054718744,
+      "total_with_overhead": 5.916022539138794
+    },
+    {
+      "parser": "pdfminer",
+      "total_time": 13.568603992462158,
+      "files_processed": 168,
+      "avg_per_file": 0.0807654999551319,
+      "total_with_overhead": 13.57030963897705
+    },
+    {
+      "parser": "pdfplumber",
+      "total_time": 17.58491563796997,
+      "files_processed": 168,
+      "avg_per_file": 0.1046721168926784,
+      "total_with_overhead": 17.58639669418335
+    },
+    {
+      "parser": "unstructured",
+      "total_time": 317.8642330169678,
+      "files_processed": 168,
+      "avg_per_file": 1.8920490060533797,
+      "total_with_overhead": 317.86858797073364
+    }
+  ]
+}

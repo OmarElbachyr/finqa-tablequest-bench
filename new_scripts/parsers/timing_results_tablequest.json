@@ -1,0 +1,51 @@
+{
+  "dataset": "tablequest",
+  "timestamp": "2025-07-17 03:33:29",
+  "total_files": 169,
+  "pages_dir": "tablequest/sampled_pages_pdf",
+  "results_dir": "new_scripts/data/parsed_pages/tablequest",
+  "timing_results": [
+    {
+      "parser": "pypdfium2",
+      "total_time": 0.5018384456634521,
+      "files_processed": 169,
+      "avg_per_file": 0.002969458258363622,
+      "total_with_overhead": 0.5028433799743652
+    },
+    {
+      "parser": "pymupdf",
+      "total_time": 0.6957626342773438,
+      "files_processed": 169,
+      "avg_per_file": 0.004116938664362981,
+      "total_with_overhead": 0.6970014572143555
+    },
+    {
+      "parser": "pypdf2",
+      "total_time": 4.636026620864868,
+      "files_processed": 169,
+      "avg_per_file": 0.027432110182632356,
+      "total_with_overhead": 4.637251138687134
+    },
+    {
+      "parser": "pdfminer",
+      "total_time": 10.921388387680054,
+      "files_processed": 169,
+      "avg_per_file": 0.06462359992710091,
+      "total_with_overhead": 10.923823595046997
+    },
+    {
+      "parser": "pdfplumber",
+      "total_time": 14.347086668014526,
+      "files_processed": 169,
+      "avg_per_file": 0.08489400395274868,
+      "total_with_overhead": 14.348694324493408
+    },
+    {
+      "parser": "unstructured",
+      "total_time": 299.1399574279785,
+      "files_processed": 169,
+      "avg_per_file": 1.7700589196921805,
+      "total_with_overhead": 299.14403462409973
+    }
+  ]
+}

@@ -3,7 +3,7 @@ import json
 
 difficulty = "hard"
 # Load medium.json
-with open(f'/home/omar/projects/haystack/tablequest/qa_pairs/{difficulty}.json', 'r') as f:
+with open(f'tablequest/qa_pairs/{difficulty}.json', 'r') as f:
     medium_data = json.load(f)
 
 # Adapt medium.json to the structure of document_qa_pairs.json
@@ -27,7 +27,7 @@ for item in medium_data:
     adapted_data.append(adapted_item)
 
 # Save the adapted data to a new JSON file
-out_file = f'/home/omar/projects/haystack/tablequest/qa_pairs/adapted_pairs/adapted_{difficulty}.json'
+out_file = f'tablequest/qa_pairs/adapted_pairs/adapted_{difficulty}.json'
 with open(out_file, 'w') as f:
     json.dump(adapted_data, f, indent=4)
 print(f"Adapted data saved to {out_file}")
