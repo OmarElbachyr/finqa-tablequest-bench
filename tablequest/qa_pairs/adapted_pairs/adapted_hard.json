@@ -1,0 +1,930 @@
+[
+    {
+        "doc_name": "3M_2018_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of cash interest payments on the net of tax reclassifications of accumulated other comprehensive income for 3M in 2018. Consider the relationship between cash interest payments and the net of tax reclassifications from the tables provided.",
+                "answer": "In 2018, the net of tax reclassifications of accumulated other comprehensive income was -$538 million, while cash interest payments were $328 million. The significant cash interest payments may have contributed to the negative reclassification, indicating a potential financial strain.",
+                "evidence_pages": [
+                    83
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the reclassifications of accumulated other comprehensive income, with a net of tax value of -$538 million for 2018. The bottom table provides cash flow information, indicating cash interest payments of $328 million for the same year. The negative reclassification suggests a reduction in comprehensive income, potentially influenced by the substantial cash interest payments. High interest payments can reduce available cash, impacting financial flexibility and possibly leading to negative reclassifications as the company adjusts its financial statements to reflect these cash outflows.",
+                "table_loc": "Top: Reclassifications of Accumulated Other Comprehensive Income Attributable to 3M; Bottom: Supplemental Cash Flow Information",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "3M_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of cumulative translation adjustments and cash flow hedging instruments on the total accumulated other comprehensive income (loss) for the six months ended June 30, 2023. How do these components compare to the same period in 2022?",
+                "answer": "In 2023, cumulative translation adjustments and cash flow hedging instruments contributed significantly to the total accumulated other comprehensive income (loss), with a net impact of $(871) million and $87 million, respectively. Compared to 2022, where these figures were $(2,814) million and $33 million, the 2023 adjustments show a reduction in losses from translation adjustments and an increase in gains from hedging instruments.",
+                "evidence_pages": [
+                    17
+                ],
+                "difficulty": "hard",
+                "cot": "The top table provides the cumulative translation adjustment and cash flow hedging instruments' impact on the total accumulated other comprehensive income (loss) for the six months ended June 30, 2023, and 2022. In 2023, the cumulative translation adjustment was $(871) million, and cash flow hedging instruments contributed $87 million. In 2022, these figures were $(2,814) million and $33 million, respectively. The bottom table details the reclassifications of these components, showing a net of tax impact of $(57) million for cumulative translation adjustments and $32 million for cash flow hedging instruments in 2023. Comparing these to 2022, where the net of tax impacts were $(73) million and $12 million, respectively, indicates a reduction in translation losses and an increase in hedging gains in 2023.",
+                "table_loc": "Top and bottom tables",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "3M_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of special items on the operating income margin for both the 'Safety and Industrial' and 'Transportation and Electronics' segments. How do these adjustments affect the overall financial performance of 3M in Q2 2023?",
+                "answer": "The adjustments for special items significantly improve the operating income margin for both segments, indicating that these items have a substantial impact on reported financial performance.",
+                "evidence_pages": [
+                    58
+                ],
+                "difficulty": "hard",
+                "cot": "The top table provides data on the 'Safety and Industrial' segment, showing GAAP operating income of $(707) million with a margin of (24.2)%. After adjustments for special items, the operating income becomes $630 million with a margin of 21.5%. This indicates a significant positive impact of special items on the operating income margin.\n\nThe middle table shows the 'Transportation and Electronics' segment with a GAAP operating income of $455 million and a margin of 23.4%. Adjustments for special items result in an operating income of $455 million with a margin of 23.4%, showing a similar positive impact.\n\nOverall, these adjustments improve the financial performance of 3M by converting losses into profits or enhancing profitability, thus providing a more favorable view of the company's financial health in Q2 2023.",
+                "table_loc": "Top and middle tables",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "Using the tables 'Net revenues by distribution channel' and 'Segment net revenues' for the year ended December 31, 2018, calculate the percentage contribution of each segment (Activision, Blizzard, King) to the total segment net revenues. Discuss the implications of these contributions for strategic decision-making in the company.",
+                "answer": "Activision contributed 33.85%, Blizzard 31.56%, and King 28.72% to the total segment net revenues. These contributions suggest that Activision is the largest revenue generator, which may influence strategic decisions such as resource allocation and investment focus.",
+                "evidence_pages": [
+                    104
+                ],
+                "difficulty": "hard",
+                "cot": "To calculate the percentage contribution of each segment to the total segment net revenues, we use the formula: (Segment Net Revenue / Total Segment Net Revenues) * 100. For Activision, the calculation is (2,458 / 7,262) * 100 = 33.85%. For Blizzard, it is (2,291 / 7,262) * 100 = 31.56%. For King, it is (2,086 / 7,262) * 100 = 28.72%. These percentages indicate the relative importance of each segment in terms of revenue generation. Activision's higher contribution suggests it is a key driver of the company's financial performance, which could impact strategic decisions such as prioritizing investment in Activision's products or exploring growth opportunities within this segment.",
+                "table_loc": "Top and middle of the page",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "ADOBE_2016_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of unrealized losses on the estimated fair value of short-term investments and available-for-sale securities. How do these losses compare between the two categories, and what might this indicate about the company's investment strategy?",
+                "answer": "Unrealized losses are higher in available-for-sale securities compared to short-term investments, indicating potential volatility in longer-term holdings. This suggests a need for strategic adjustments to mitigate risk.",
+                "evidence_pages": [
+                    75
+                ],
+                "difficulty": "hard",
+                "cot": "The top table provides data on cash, cash equivalents, and short-term investments, showing unrealized losses of $7,102 for short-term investments. The bottom table details available-for-sale securities, with gross unrealized losses of $11,658 in 2016. Comparing these, available-for-sale securities have higher unrealized losses, suggesting they are more susceptible to market fluctuations. This could indicate that the company's investment strategy involves higher risk in longer-term securities, which may require reevaluation to balance risk and return.",
+                "table_loc": "Top: Cash, cash equivalents, and short-term investments; Bottom: Available-for-sale securities unrealized losses.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "ADOBE_2017_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the trend in Adobe's property and equipment net value from 2015 to 2017 and compare it with the trend in quarterly net income for 2017. What might this indicate about Adobe's investment strategy and its impact on profitability?",
+                "answer": "Adobe's increasing property and equipment net value from 2015 to 2017 suggests a strategic investment in assets, which correlates with a steady increase in quarterly net income in 2017, indicating effective asset utilization contributing to profitability.",
+                "evidence_pages": [
+                    96
+                ],
+                "difficulty": "hard",
+                "cot": "The Property and Equipment table shows a consistent increase in Adobe's net property and equipment value from $787,421 in 2015 to $936,976 in 2017. This indicates a strategic investment in physical assets over the years. Meanwhile, the Selected Quarterly Financial Data table for 2017 shows a steady increase in net income from $398,446 in March to $419,569 in December. The correlation between increased asset investment and rising net income suggests that Adobe's investments in property and equipment are likely contributing positively to its profitability. This could imply that the company is effectively utilizing its assets to generate higher income, reflecting a successful investment strategy.",
+                "table_loc": "Page 96, Property and Equipment table and Selected Quarterly Financial Data table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AES_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the changes in Operating Margin and Adjusted Operating Margin for the Eurasia SBU from 2020 to 2022. How do the drivers of these changes reflect on the company's operational efficiency and cost management strategies?",
+                "answer": "The increase in Operating Margin and Adjusted Operating Margin from 2020 to 2022 indicates improved operational efficiency and effective cost management, driven by factors such as reduced completion costs and higher electricity prices.",
+                "evidence_pages": [
+                    103
+                ],
+                "difficulty": "hard",
+                "cot": "The top table provides data on Operating Margin, Adjusted Operating Margin, and Adjusted PTC for the years 2020, 2021, and 2022. The fiscal year analysis sections detail the drivers behind the changes in these metrics. From 2020 to 2021, Operating Margin increased by 16%, and Adjusted Operating Margin by 14%, primarily due to higher electricity prices and improved operational performance. From 2021 to 2022, Operating Margin increased by 9%, and Adjusted Operating Margin by 6%, driven by reduced completion costs and higher interest rates. These changes suggest that the company has been successful in enhancing operational efficiency and managing costs effectively, as evidenced by the consistent growth in margins despite varying external conditions.",
+                "table_loc": "Top table and fiscal year analysis sections",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMAZON_2017_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of new acquisitions on Amazon's financial performance in 2017 by comparing the net sales and net income with the changes in goodwill. What can be inferred about the effectiveness of these acquisitions?",
+                "answer": "The increase in net sales and net income in 2017, alongside the significant rise in goodwill due to acquisitions, suggests that the acquisitions were effective in enhancing Amazon's financial performance.",
+                "evidence_pages": [
+                    54
+                ],
+                "difficulty": "hard",
+                "cot": "The net sales increased from $152,283 million in 2016 to $187,890 million in 2017, and net income rose from $2,148 million to $2,940 million. This indicates a substantial improvement in financial performance. The goodwill table shows a significant increase in goodwill from $3,784 million at the end of 2016 to $13,350 million at the end of 2017, primarily due to new acquisitions. The increase in goodwill reflects the premium paid over the fair value of acquired net assets, suggesting strategic acquisitions aimed at growth. The correlation between increased goodwill and improved financial metrics implies that the acquisitions contributed positively to Amazon's performance.",
+                "table_loc": "Net sales and net income table; Goodwill table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2020_10K",
+        "qa_pairs": [
+            {
+                "question": "Using the tables provided, analyze how the expected benefit payments over the next five years might impact the allocation of pension plan assets. Consider the expected future service payments and the current asset allocation in your analysis.",
+                "answer": "The expected benefit payments over the next five years total $477 million, which may necessitate a more liquid asset allocation to meet these obligations. Currently, a significant portion of assets is in Level 3, which may need adjustment to ensure liquidity.",
+                "evidence_pages": [
+                    82
+                ],
+                "difficulty": "hard",
+                "cot": "The first table outlines the expected benefit payments from 2021 to 2025, totaling $477 million. The second table details the pension plan assets as of June 30, 2020, with a total value of $1,691.1 million. A significant portion of these assets is in Level 3 ($456.1 million), which are less liquid compared to Level 1 and Level 2 assets. To meet the expected benefit payments, the company might need to adjust its asset allocation to ensure sufficient liquidity. This could involve reallocating some Level 3 assets to more liquid Level 1 or Level 2 assets, such as equity or government debt securities, to ensure that the company can meet its obligations without incurring significant transaction costs or losses.",
+                "table_loc": "Top: Expected benefit payments; Bottom: Pension plan assets",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Using the 'Consolidated Results of Operations' and 'Segment Results of Operations - Flexibles Segment' tables, analyze the relationship between net sales and operating income/adjusted EBIT for Amcor in 2022. How do these figures reflect on the company's operational efficiency?",
+                "answer": "In 2022, Amcor's consolidated operating income as a percentage of net sales was 15.3%, while the Flexibles Segment's adjusted EBIT was 12.6%. This indicates that the overall company operations were more efficient than the Flexibles Segment alone.",
+                "evidence_pages": [
+                    36
+                ],
+                "difficulty": "hard",
+                "cot": "The 'Consolidated Results of Operations' table shows that Amcor's net sales in 2022 were $3,642 million with an operating income of $559 million, resulting in an operating income percentage of 15.3%. The 'Segment Results of Operations - Flexibles Segment' table indicates net sales of $2,812 million and an adjusted EBIT of $353 million, leading to an adjusted EBIT percentage of 12.6%. Comparing these percentages, the consolidated operations have a higher efficiency (15.3%) compared to the Flexibles Segment (12.6%), suggesting that other segments or factors contribute positively to the overall efficiency.",
+                "table_loc": "Consolidated Results of Operations, Segment Results of Operations - Flexibles Segment",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the relationship between Amcor's Adjusted EBIT and Net Debt from June 30, 2022, to June 30, 2023. How might changes in Adjusted EBIT impact the company's ability to manage its net debt?",
+                "answer": "The increase in Adjusted EBIT from $1,701 million to $1,608 million, despite a decrease, suggests that Amcor maintained strong operational performance, which supports its ability to manage net debt, which increased from $5,715 million to $6,057 million.",
+                "evidence_pages": [
+                    14
+                ],
+                "difficulty": "hard",
+                "cot": "The Adjusted EBIT for Amcor decreased from $1,701 million in 2022 to $1,608 million in 2023. Despite this decrease, the company maintained a relatively high level of operational earnings. Meanwhile, the net debt increased from $5,715 million to $6,057 million. The ability to generate substantial Adjusted EBIT is crucial for servicing debt obligations. A strong EBIT can provide the necessary cash flow to cover interest payments and reduce debt levels over time. Therefore, even with a slight decrease in Adjusted EBIT, the company's ability to manage its net debt remains supported by its operational performance.",
+                "table_loc": "Top: Adjusted EBIT; Bottom: Net Debt",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANWATERWORKS_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the changes in deferred pension expense and postretirement benefit liability from 2020 to 2021. Discuss the potential financial implications for American Water Works if these trends continue. Consider both regulatory assets and liabilities in your analysis.",
+                "answer": "The deferred pension expense decreased by $51 million, while the postretirement benefit liability decreased by $17 million from 2020 to 2021. If these trends continue, American Water Works may experience reduced regulatory asset recovery and liability obligations, potentially impacting cash flow and financial stability.",
+                "evidence_pages": [
+                    101
+                ],
+                "difficulty": "hard",
+                "cot": "The deferred pension expense, a component of regulatory assets, decreased from $374 million in 2020 to $323 million in 2021, indicating a $51 million reduction. This suggests a decrease in the amount recoverable through future rates, potentially affecting future cash flows. On the liabilities side, the postretirement benefit liability decreased from $170 million in 2020 to $153 million in 2021, a $17 million reduction. This decrease in liabilities could imply lower future obligations, positively impacting financial stability. However, if the trend of decreasing regulatory assets continues, it may offset the benefits of reduced liabilities, affecting the company's overall financial health.",
+                "table_loc": "Top: Regulatory Assets; Bottom: Regulatory Liabilities",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANWATERWORKS_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the potential impact on the Consolidated Financial Statements of adopting the 'Facilitation of the Effects of Reference Rate Reform on Financial Reporting' standard compared to the 'Accounting for Convertible Instruments and Contracts in an Entity\u2019s Own Equity' standard. Consider the timing and nature of the impact.",
+                "answer": "The 'Facilitation of the Effects of Reference Rate Reform on Financial Reporting' standard had no material impact on the Consolidated Financial Statements, while the impact of the 'Accounting for Convertible Instruments and Contracts in an Entity\u2019s Own Equity' standard is anticipated to be minimal, with the timing of adoption being January 1, 2022.",
+                "evidence_pages": [
+                    96
+                ],
+                "difficulty": "hard",
+                "cot": "The 'Facilitation of the Effects of Reference Rate Reform on Financial Reporting' standard, adopted from March 12, 2020, through December 31, 2022, was applied prospectively and had no material impact on the Consolidated Financial Statements. In contrast, the 'Accounting for Convertible Instruments and Contracts in an Entity\u2019s Own Equity' standard, effective January 1, 2022, allows for either a modified retrospective or fully retrospective application. The company anticipates that the adoption of this standard will have a minimal impact on its Consolidated Financial Statements. The key difference lies in the timing and certainty of the impact, with the former already having been assessed as immaterial and the latter still under evaluation.",
+                "table_loc": "Top and middle tables",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2023_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of SG&A expenses on operating income for Best Buy in 2023 by comparing the Consolidated Performance Summary and the Domestic Segment Performance Summary. How do the SG&A expenses as a percentage of revenue differ between the two tables, and what might this indicate about the company's cost management strategies?",
+                "answer": "In 2023, SG&A expenses as a percentage of revenue were 17.2% for the consolidated results and 17.1% for the domestic segment. This slight difference suggests consistent cost management across segments, indicating a focused strategy to control operating expenses relative to revenue.",
+                "evidence_pages": [
+                    25
+                ],
+                "difficulty": "hard",
+                "cot": "The Consolidated Performance Summary shows SG&A expenses as a percentage of revenue at 17.2% for 2023, while the Domestic Segment Performance Summary shows it at 17.1%. This close alignment suggests that Best Buy has maintained a consistent approach to managing selling, general, and administrative expenses across its operations. The slight difference might indicate minor variations in cost structures or efficiencies between the consolidated and domestic operations. The impact on operating income is significant, as controlling SG&A expenses helps maintain profitability despite revenue declines. The consistent SG&A percentage across segments reflects a strategic focus on cost management, which is crucial in a year where revenue and comparable sales have decreased.",
+                "table_loc": "Consolidated Performance Summary, Domestic Segment Performance Summary",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2024Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Using the amortization expense data and the fair value measurements of financial assets, analyze how changes in amortization expenses might impact the fair value of financial assets over time. Consider the amortization expense trends and the fair value hierarchy levels in your analysis.",
+                "answer": "The increase in amortization expenses could potentially reduce net income, affecting the company's cash flow and possibly influencing the fair value of financial assets, especially those classified under Level 1 and Level 2, due to changes in market perceptions and liquidity.",
+                "evidence_pages": [
+                    10
+                ],
+                "difficulty": "hard",
+                "cot": "The amortization expense table shows a consistent expense of $21 million for the remainder of fiscal 2024 and fiscal 2025, with a gradual decrease in subsequent years. This suggests a planned reduction in amortization costs over time. The fair value measurements table indicates that financial assets are categorized into different levels based on market observability. Level 1 assets are valued using unadjusted quoted prices, while Level 2 assets use observable market inputs. An increase in amortization expenses could reduce net income, impacting cash flow and potentially affecting the market's perception of the company's financial health. This could influence the fair value of Level 1 and Level 2 assets, as these are sensitive to market conditions and liquidity. Therefore, understanding the relationship between amortization expenses and fair value measurements is crucial for assessing the company's financial strategy and market position.",
+                "table_loc": "Amortization expense table and Fair Value Measurements table",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2024Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of derivative instruments on Best Buy's financial position by comparing the notional amounts of derivatives and the long-term debt figures as of July 29, 2023. Discuss how these financial instruments might affect the company's risk management strategy.",
+                "answer": "The notional amount of derivatives ($652 million) is significant compared to the total long-term debt ($1,145 million), indicating a robust risk management strategy to hedge against interest rate and currency fluctuations. This suggests Best Buy is actively managing financial risks to stabilize earnings and protect against market volatility.",
+                "evidence_pages": [
+                    11
+                ],
+                "difficulty": "hard",
+                "cot": "The Derivative Instruments table shows a total notional amount of $652 million as of July 29, 2023, with derivatives designated as interest rate swap contracts being the largest component at $500 million. The Long-Term Debt table indicates a total long-term debt of $1,145 million for the same date. By comparing these figures, we see that the notional amount of derivatives is a substantial portion of the long-term debt, highlighting the importance of derivatives in Best Buy's financial strategy. The use of derivatives, particularly interest rate swaps, suggests that Best Buy is actively managing its exposure to interest rate fluctuations, which can impact the cost of debt. This strategy likely aims to stabilize cash flows and earnings, providing a buffer against market volatility. The comparison underscores the role of derivatives in mitigating financial risks associated with debt obligations.",
+                "table_loc": "Derivative Instruments Table, Long-Term Debt Table",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "CORNING_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of 'Equity in losses of affiliated companies' on 'Net income' for the years 2019 and 2020. How does this impact differ between the two years, and what might this suggest about Corning's affiliated companies' performance?",
+                "answer": "In 2019, 'Equity in losses of affiliated companies' reduced net income by $213 million, while in 2020, it reduced net income by $111 million. This suggests an improvement in the performance of Corning's affiliated companies from 2019 to 2020.",
+                "evidence_pages": [
+                    34
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the impact of 'Equity in losses of affiliated companies' on 'Net income', we compare the figures for 2019 and 2020. In 2019, the 'Equity in losses of affiliated companies' was $213 million, which directly reduced the net income by the same amount. In 2020, this figure was $111 million, indicating a lesser reduction in net income compared to 2019. This decrease in losses suggests that the performance of Corning's affiliated companies improved in 2020 relative to 2019, as the losses were less impactful on the overall net income.",
+                "table_loc": "Both tables for 2019 and 2020",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "CORNING_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of changes in the discount rate and expected return on plan assets on the pension benefits for both domestic and international categories from 2019 to 2021. How do these changes potentially affect the postretirement benefits?",
+                "answer": "The decrease in the discount rate from 2019 to 2021 likely increased the pension benefit obligations, while the stable expected return on plan assets for domestic plans suggests a consistent approach to asset management. For international plans, the decrease in expected return could indicate a more conservative investment strategy, potentially increasing the cost of postretirement benefits.",
+                "evidence_pages": [
+                    97
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the weighted-average assumptions used to determine benefit obligations, including the discount rate and expected return on plan assets. From 2019 to 2021, the discount rate for domestic pension benefits decreased from 3.28% to 2.87%, and for international pension benefits, it decreased from 1.34% to 1.02%. This decrease in the discount rate generally increases the present value of future obligations, thus increasing the pension benefit obligations. The expected return on plan assets for domestic plans remained constant at 6.00%, indicating a stable investment strategy. However, for international plans, the expected return decreased from 1.71% to 1.26%, suggesting a shift towards a more conservative investment approach. These changes in assumptions can lead to higher costs for postretirement benefits, as lower discount rates increase obligations and lower expected returns reduce the anticipated growth of plan assets.",
+                "table_loc": "Top and middle tables",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "GENERALMILLS_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in the fair value measurement of pension plan assets and postretirement benefit plan assets from Fiscal Year 2018 to Fiscal Year 2019. What factors might explain the differences in the total asset values between these two categories?",
+                "answer": "The total pension plan assets increased from $6,177.4 million in 2018 to $6,291.6 million in 2019, while postretirement benefit plan assets decreased from $296.6 million to $294.5 million. The increase in pension plan assets could be due to higher equity and fixed income values, while the decrease in postretirement assets might be influenced by lower equity values.",
+                "evidence_pages": [
+                    93
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the fair value measurement of pension plan assets for Fiscal Years 2018 and 2019, while the bottom table shows the fair value measurement of postretirement benefit plan assets for the same years. In 2019, the total pension plan assets increased to $6,291.6 million from $6,177.4 million in 2018. This increase is primarily due to higher values in equity and fixed income categories. On the other hand, the total postretirement benefit plan assets decreased slightly from $296.6 million in 2018 to $294.5 million in 2019. This decrease is mainly due to a reduction in equity values, despite a slight increase in fixed income values. The differences in asset values between these two categories can be attributed to varying investment strategies and market conditions affecting equity and fixed income securities differently.",
+                "table_loc": "Top and bottom tables",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Using the 'Regional Sales Results' and 'Segment Sales Results' tables for Q4 2022, analyze the impact of currency fluctuations on the operational sales growth in the U.S. and International markets. How do these fluctuations compare across different segments?",
+                "answer": "Currency fluctuations had no impact on U.S. operational sales growth, while they negatively impacted International sales by 10.4%. In the Consumer Health segment, currency reduced growth by 5.4%, while in Pharmaceuticals and MedTech, it reduced growth by 4.9% and 6.1%, respectively.",
+                "evidence_pages": [
+                    2
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the impact of currency fluctuations, we first look at the 'Regional Sales Results' table. For the U.S., the currency impact is zero, indicating no effect on operational sales growth. However, for the International market, currency fluctuations resulted in a 10.4% negative impact. Next, examining the 'Segment Sales Results' table, we see that currency fluctuations reduced Consumer Health growth by 5.4%, Pharmaceuticals by 4.9%, and MedTech by 6.1%. This shows that while the U.S. market was unaffected by currency changes, the International market and all segments experienced negative impacts, with MedTech being the most affected.",
+                "table_loc": "Regional Sales Results, Segment Sales Results",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the performance of Johnson & Johnson's Pharmaceutical and MedTech segments for the fourth quarter of 2022. How do their international sales compare in terms of percentage change, and what might this indicate about their global market strategies?",
+                "answer": "In Q4 2022, the Pharmaceutical segment's international sales decreased by 14.9%, while MedTech's international sales decreased by 8.6%. This suggests that the Pharmaceutical segment faced more significant challenges internationally, possibly due to market saturation or increased competition, whereas MedTech may have had a more resilient strategy or product offering.",
+                "evidence_pages": [
+                    8
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the performance of the Pharmaceutical and MedTech segments, we examine their international sales figures for Q4 2022. The Pharmaceutical segment shows a decrease from $6,799 million in 2021 to $5,788 million in 2022, a 14.9% decline. In contrast, the MedTech segment's international sales decreased from $3,643 million in 2021 to $3,331 million in 2022, an 8.6% decline. The larger decline in the Pharmaceutical segment suggests it faced more significant challenges in international markets, which could be due to factors like increased competition, regulatory changes, or market saturation. Meanwhile, the smaller decline in MedTech indicates a relatively better performance, possibly due to a stronger product portfolio or effective market strategies.",
+                "table_loc": "Pharmaceutical and MedTech sections in the Fourth Quarter table",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the sales performance of Johnson & Johnson in the Asia-Pacific, Africa region for both the fourth quarter and the twelve months of 2022. How did the percentage change in sales for this region compare to the overall worldwide sales percentage change for the same periods?",
+                "answer": "In the fourth quarter of 2022, the Asia-Pacific, Africa region saw a 10.0% decrease in sales, while worldwide sales decreased by 4.4%. For the twelve months, the region experienced a 2.8% decrease, compared to a 1.3% increase worldwide.",
+                "evidence_pages": [
+                    9
+                ],
+                "difficulty": "hard",
+                "cot": "The tables provide sales data for different geographic areas, including the Asia-Pacific, Africa region, for both the fourth quarter and the twelve months of 2022. In the fourth quarter, the Asia-Pacific, Africa region experienced a 10.0% decrease in sales, which is more significant than the worldwide decrease of 4.4%. For the twelve months, the region's sales decreased by 2.8%, while worldwide sales increased by 1.3%. This indicates that the Asia-Pacific, Africa region underperformed compared to the overall company performance in both periods.",
+                "table_loc": "Fourth Quarter and Twelve Months tables",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2023Q2_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the performance of the 'Consumer Health Segment' for the second quarter and the first six months of 2023. How does the operational growth compare between these two periods, and what might this indicate about the segment's performance?",
+                "answer": "The operational growth for the Consumer Health Segment was 6.0% in Q2 and 8.6% for the first six months of 2023. This indicates stronger performance in the first half of the year compared to the second quarter alone, suggesting potential seasonal factors or strategic initiatives impacting growth.",
+                "evidence_pages": [
+                    15
+                ],
+                "difficulty": "hard",
+                "cot": "The left table shows the 'Consumer Health Segment' performance for the second quarter of 2023, with an operational growth of 6.0%. The right table provides data for the first six months of 2023, showing an operational growth of 8.6%. Comparing these two periods, the operational growth is higher for the first six months than for the second quarter alone. This suggests that the segment experienced stronger growth earlier in the year, which could be due to seasonal demand, successful marketing strategies, or other operational efficiencies that were more pronounced in the first half of the year.",
+                "table_loc": "Left table: Second Quarter; Right table: Six Months",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2023Q2_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of currency fluctuations on the operational sales growth for Johnson & Johnson's MedTech segment compared to its overall worldwide sales in Q2 2023. Use the 'Regional Sales Results' and 'Segment Sales Results' tables to support your analysis.",
+                "answer": "Currency fluctuations had a more negative impact on the MedTech segment's operational sales growth compared to the overall worldwide sales, reducing MedTech's growth by 1.8% versus a 1.2% reduction for worldwide sales.",
+                "evidence_pages": [
+                    2
+                ],
+                "difficulty": "hard",
+                "cot": "The 'Regional Sales Results' table shows that worldwide sales experienced a 1.2% negative impact from currency fluctuations, reducing the operational growth from 7.5% to an adjusted 6.2%. The 'Segment Sales Results' table indicates that the MedTech segment had a 12.9% operational growth, which was reduced by 1.8% due to currency fluctuations, resulting in an adjusted operational growth of 9.9%. Comparing these, currency fluctuations had a more significant negative impact on the MedTech segment than on the overall worldwide sales.",
+                "table_loc": "Regional Sales Results, Segment Sales Results",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2023Q2_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the performance of Johnson & Johnson's Pharmaceutical and MedTech segments for the second quarter of 2023. How do their growth rates compare, and what might this indicate about the company's strategic focus?",
+                "answer": "In Q2 2023, MedTech grew by 12.9% while Pharmaceuticals grew by 3.1%. This suggests a stronger focus or success in expanding the MedTech segment.",
+                "evidence_pages": [
+                    8
+                ],
+                "difficulty": "hard",
+                "cot": "The table provides sales data for different business segments of Johnson & Johnson for the second quarter of 2023. The Pharmaceutical segment shows a growth rate of 3.1% compared to the previous year, while the MedTech segment shows a significantly higher growth rate of 12.9%. This disparity in growth rates suggests that the MedTech segment is experiencing more rapid expansion or has been a strategic focus for the company, potentially due to innovations, increased demand, or successful market penetration strategies. The higher growth in MedTech could indicate a shift in strategic priorities or a response to market opportunities in the healthcare technology space.",
+                "table_loc": "Left side of the image, under 'Sales to customers by segment of business'",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2023_8K_dated-2023-08-30",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of intangible asset amortization expense on the adjusted income before tax for both Q4 2022 QTD and Q4 2022 YTD for the Pharmaceutical and MedTech segments. How does this expense affect the percentage of sales for each segment in both periods?",
+                "answer": "Intangible asset amortization expense significantly reduces the adjusted income before tax for both segments in both periods. In Q4 2022 QTD, the Pharmaceutical segment's adjusted income is reduced by $717 million, affecting its % to sales by 7.2%. For MedTech, the reduction is $260 million, affecting its % to sales by 3.2%. In Q4 2022 YTD, the Pharmaceutical segment's adjusted income is reduced by $2,911 million, affecting its % to sales by 12.2%, while MedTech's reduction is $1,033 million, affecting its % to sales by 9.3%.",
+                "evidence_pages": [
+                    24
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the impact of intangible asset amortization expense on adjusted income before tax, we first identify the expense amounts for both the Pharmaceutical and MedTech segments in the Q4 2022 QTD and Q4 2022 YTD tables. In Q4 2022 QTD, the Pharmaceutical segment has an amortization expense of $717 million, and MedTech has $260 million. These expenses reduce the adjusted income before tax, which is calculated by adding back these expenses to the reported income before tax. The % to sales for the Pharmaceutical segment is 37.7% after adjustments, compared to 24.5% before adjustments, indicating a 7.2% impact. For MedTech, the % to sales is 24.5% after adjustments, compared to 11.9% before adjustments, indicating a 3.2% impact. In Q4 2022 YTD, the Pharmaceutical segment's amortization expense is $2,911 million, and MedTech's is $1,033 million. The adjusted % to sales for the Pharmaceutical segment is 41.0%, compared to 29.8% before adjustments, showing a 12.2% impact. For MedTech, the adjusted % to sales is 25.5%, compared to 16.2% before adjustments, showing a 9.3% impact. These calculations demonstrate the significant effect of amortization expenses on the financial performance of both segments.",
+                "table_loc": "Q4 2022 QTD and Q4 2022 YTD tables",
+                "report_type": "dated-2023-08-30"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2023_8K_dated-2023-08-30",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of currency fluctuations on Johnson & Johnson's operational sales growth in the MedTech segment compared to the overall international sales. How do these fluctuations affect the adjusted operational sales growth in both cases?",
+                "answer": "Currency fluctuations negatively impacted both MedTech and international sales, reducing their operational growth rates. Despite this, adjusted operational sales growth remained positive, indicating strong underlying performance.",
+                "evidence_pages": [
+                    5
+                ],
+                "difficulty": "hard",
+                "cot": "The MedTech segment reported a 10.1% increase in sales, with an operational growth of 12.8%. However, currency fluctuations reduced this growth by 2.7%, resulting in an adjusted operational growth of 8.1%. Similarly, international sales grew by 1.5% with an operational increase of 5.8%, but currency effects reduced this by 4.3%, leading to an adjusted operational growth of 5.4%. In both cases, currency fluctuations had a negative impact, but the adjusted operational growth figures show resilience in underlying sales performance.",
+                "table_loc": "Regional Sales Results, Segment Sales Results",
+                "report_type": "dated-2023-08-30"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in the total notional amount of credit derivatives and credit-related notes from December 31, 2020, to March 31, 2021. Discuss the implications of these changes on JPMorgan's risk exposure, considering the ratings profile and net fair value changes.",
+                "answer": "The total notional amount of credit derivatives and credit-related notes increased from $575,178 million to $641,304 million. This increase suggests a higher risk exposure, but the improvement in net fair value from $6,097 million to $6,528 million indicates better risk management or favorable market conditions.",
+                "evidence_pages": [
+                    110
+                ],
+                "difficulty": "hard",
+                "cot": "The tables provide data on credit derivatives and credit-related notes for two periods: December 31, 2020, and March 31, 2021. The total notional amount increased from $575,178 million to $641,304 million, indicating a rise in potential risk exposure. However, the net fair value improved from $6,097 million to $6,528 million, suggesting that despite the increased notional amount, JPMorgan managed to enhance its risk management or benefited from favorable market conditions. The ratings profile shows a shift towards more investment-grade exposure, which could also contribute to the improved net fair value.",
+                "table_loc": "Tables on page 110",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the trend in investment-grade and noninvestment-grade loans from 2020 to 2021 for both 'Commercial and industrial' and 'Other' categories. How do these trends compare, and what might this indicate about JPMorgan's lending strategy?",
+                "answer": "From 2020 to 2021, investment-grade loans decreased in the 'Commercial and industrial' category but increased in the 'Other' category, while noninvestment-grade loans increased in both categories. This suggests a strategic shift towards higher-risk lending in 'Commercial and industrial' and a balanced approach in 'Other'.",
+                "evidence_pages": [
+                    132
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows 'Commercial and industrial' loans, where investment-grade loans decreased from $21,211 million in 2020 to $8,483 million in 2021, while noninvestment-grade loans increased from $15,060 million to $11,983 million. The middle table shows 'Other' loans, where investment-grade loans increased from $31,389 million in 2020 to $12,389 million in 2021, and noninvestment-grade loans increased from $5,009 million to $5,500 million. The decrease in investment-grade loans in 'Commercial and industrial' suggests a shift towards higher-risk lending, while the increase in both grades in 'Other' indicates a more balanced strategy.",
+                "table_loc": "Top and middle tables",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in total assets and total net charge-offs/(recoveries) for JPMorgan from 2020 to 2021. Discuss the potential implications of these changes on the bank's financial health.",
+                "answer": "The decrease in total net charge-offs/(recoveries) alongside a decrease in total assets suggests improved asset quality, potentially enhancing financial stability.",
+                "evidence_pages": [
+                    21
+                ],
+                "difficulty": "hard",
+                "cot": "The table on the left shows that total assets decreased by 5% from $513,352 million in 2020 to $487,978 million in 2021. The table on the right indicates that total net charge-offs/(recoveries) decreased by 22% from $1,313 million in 2020 to $1,023 million in 2021. A decrease in total assets might initially suggest a contraction in the bank's balance sheet, which could be due to various strategic decisions or market conditions. However, the simultaneous decrease in net charge-offs/(recoveries) indicates an improvement in the quality of the bank's loan portfolio, as fewer loans are being written off as uncollectible. This improvement in asset quality can enhance the bank's financial health by reducing potential losses and increasing profitability.",
+                "table_loc": "Left: Selected balance sheet data (period-end); Right: Credit data and quality statistics",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of changes in the components of the Firm's RWA on the total allocated capital for the Consumer & Community Banking segment between December 31, 2020, and March 31, 2021. Consider both the Standardized and Advanced approaches.",
+                "answer": "The increase in total RWA under both approaches suggests a potential need for higher allocated capital to maintain regulatory compliance, yet the Consumer & Community Banking segment's allocated capital remained constant, indicating efficient capital management or offsetting factors.",
+                "evidence_pages": [
+                    39
+                ],
+                "difficulty": "hard",
+                "cot": "The tables provide data on the components of the Firm's RWA under both Standardized and Advanced approaches, and the allocated capital for different business segments. Between December 31, 2020, and March 31, 2021, the total RWA increased from $1,484,431 million to $1,503,828 million under the Advanced approach. Despite this increase, the allocated capital for the Consumer & Community Banking segment remained constant at $50 billion. This suggests that while the overall risk-weighted assets increased, the firm managed to maintain the same level of allocated capital for this segment, possibly due to efficient capital management or other offsetting factors such as improved risk management or changes in other segments' capital allocations.",
+                "table_loc": "Top left and bottom right",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in total government guaranteed loans and nonaccrual retained loans from December 31, 2020, to March 31, 2021. Discuss the potential implications for the firm's financial stability.",
+                "answer": "The decrease in total government guaranteed loans and the increase in nonaccrual retained loans suggest a shift in the firm's risk profile, potentially indicating increased financial instability.",
+                "evidence_pages": [
+                    50
+                ],
+                "difficulty": "hard",
+                "cot": "The table on the top right shows the total government guaranteed loans decreased from $1,778 million on December 31, 2020, to $1,719 million on March 31, 2021. This indicates a reduction in the firm's reliance on government-backed securities, which could imply a decrease in secured assets. Meanwhile, the bottom right table shows an increase in nonaccrual retained loans from $3,899 million to $3,907 million over the same period. This increase in nonaccrual loans suggests a rise in loans that are not generating interest income, potentially increasing the firm's credit risk. The combination of these changes could indicate a shift towards higher risk, affecting the firm's financial stability.",
+                "table_loc": "Top right and bottom right",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the changes in fair value for both 'Total debt instruments' under Assets and 'Deposits' under Liabilities for the six months ended June 30, 2022. What factors contributed to these changes, and how do they compare in terms of their impact on the financial position of the firm?",
+                "answer": "The fair value of 'Total debt instruments' increased by $1,002 million, while 'Deposits' decreased by $285 million. The increase in debt instruments was primarily due to purchases and transfers into level 3, whereas the decrease in deposits was influenced by sales and settlements.",
+                "evidence_pages": [
+                    102
+                ],
+                "difficulty": "hard",
+                "cot": "The 'Total debt instruments' under Assets increased from $1,457 million to $2,531 million, a change of $1,074 million. This increase was driven by purchases ($1,829 million) and transfers into level 3 ($671 million), offset by sales ($734 million) and settlements ($236 million). In contrast, 'Deposits' under Liabilities decreased from $2,317 million to $2,032 million, a change of $285 million. This decrease was primarily due to sales ($246 million) and settlements ($69 million), with a minor offset from transfers into level 3 ($5 million). The increase in debt instruments suggests a strategic investment in higher-risk assets, while the decrease in deposits indicates a reduction in liabilities, potentially improving liquidity.",
+                "table_loc": "Assets: Top table, Liabilities: Bottom table",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the changes in total assets measured at fair value on a nonrecurring basis from June 30, 2021, to June 30, 2022. How do these changes correlate with the nonrecurring fair value gains/losses reported for the same periods?",
+                "answer": "The total assets measured at fair value on a nonrecurring basis increased from $2,059 million in 2021 to $3,286 million in 2022. This increase correlates with a net loss of $424 million in nonrecurring fair value adjustments for the six months ended June 30, 2022, compared to a gain of $67 million in 2021.",
+                "evidence_pages": [
+                    106
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows that total assets measured at fair value on a nonrecurring basis increased from $2,059 million in 2021 to $3,286 million in 2022. This increase is primarily due to the rise in Level 3 assets, which grew from $1,160 million to $1,748 million. The bottom table indicates a net loss of $424 million in nonrecurring fair value adjustments for the six months ended June 30, 2022, compared to a gain of $67 million in 2021. The increase in Level 3 assets, which are more subjective in valuation, likely contributed to the higher volatility and subsequent losses in fair value adjustments.",
+                "table_loc": "Top and bottom tables on page 106",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in loan delinquency ratios from December 31, 2021, to June 30, 2022, and discuss how these changes might impact the credit quality indicators by geographic region, particularly focusing on California and Texas.",
+                "answer": "The increase in loan delinquency ratios from December 31, 2021, to June 30, 2022, suggests a potential decline in credit quality, which could disproportionately affect regions with higher loan balances like California and Texas.",
+                "evidence_pages": [
+                    144
+                ],
+                "difficulty": "hard",
+                "cot": "The tables provide data on loan delinquency ratios and geographic distribution of retained loans. From December 31, 2021, to June 30, 2022, the % of 30+ days past due loans increased from 1.04% to 1.05%, and the % of 90+ days past due loans increased from 0.50% to 0.51%. These increases indicate a slight deterioration in credit quality. California and Texas have the highest loan balances, suggesting that any negative changes in delinquency ratios could significantly impact these regions. The increase in delinquency ratios could lead to higher risk and potential losses, particularly in areas with substantial loan portfolios.",
+                "table_loc": "Page 144",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the trends in the criticized nonaccrual loans secured by real estate and the total nonaccrual loans from June 30, 2021, to June 30, 2022. What might these trends indicate about the financial health of the real estate sector?",
+                "answer": "The increase in criticized nonaccrual loans secured by real estate from $326 million to $328 million, alongside a rise in total nonaccrual loans from $2,054 million to $2,083 million, suggests a slight deterioration in loan performance, potentially indicating increased financial stress in the real estate sector.",
+                "evidence_pages": [
+                    148
+                ],
+                "difficulty": "hard",
+                "cot": "The first table provides data on criticized nonaccrual loans secured by real estate, showing a slight increase from $326 million in December 2021 to $328 million in June 2022. The third table shows total nonaccrual loans increasing from $2,054 million to $2,083 million over the same period. The increase in criticized nonaccrual loans suggests that more loans are becoming problematic, which could indicate financial stress in the real estate sector. This trend, combined with the overall increase in nonaccrual loans, may reflect broader economic challenges affecting borrowers' ability to meet their obligations.",
+                "table_loc": "Page 148, Tables 1 and 3",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the changes in the total contractual amount of standby letters of credit and other financial guarantees from December 31, 2021, to June 30, 2022. Additionally, compare these changes with the notional amounts of derivative guarantees over the same period. What might these changes indicate about JPMorgan's risk management strategies?",
+                "answer": "The total contractual amount of standby letters of credit and other financial guarantees decreased slightly from $28,530 million to $28,051 million, while the notional amounts of derivative guarantees decreased significantly from $55,730 million to $54,183 million. This suggests a strategic reduction in exposure to derivative guarantees, possibly indicating a shift towards more stable financial instruments or a response to market conditions.",
+                "evidence_pages": [
+                    171
+                ],
+                "difficulty": "hard",
+                "cot": "The table 'Standby letters of credit, other financial guarantees and other letters of credit' shows a decrease in the total contractual amount from $28,530 million on December 31, 2021, to $28,051 million on June 30, 2022. This is a minor reduction, suggesting a stable approach to these financial instruments. In contrast, the 'Derivatives qualifying as guarantees' table shows a more significant decrease in notional amounts from $55,730 million to $54,183 million over the same period. This larger reduction in derivative guarantees could indicate a strategic decision to reduce exposure to potentially volatile derivative markets, reflecting a cautious risk management strategy in response to market conditions or regulatory changes.",
+                "table_loc": "Standby letters of credit, other financial guarantees and other letters of credit; Derivatives qualifying as guarantees",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in the total loan balances from December 31, 2021, to December 31, 2022, for each portfolio segment. How do the purchases, sales, and reclassifications to held-for-sale contribute to this change?",
+                "answer": "The total loan balance increased by $57,933 million from 2021 to 2022. The increase is primarily due to net purchases exceeding sales and reclassifications to held-for-sale, particularly in the Wholesale segment.",
+                "evidence_pages": [
+                    230
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the change in total loan balances, we first look at the top table showing balances as of December 31, 2021, and December 31, 2022. The total loan balance increased from $1,077,714 million in 2021 to $1,135,647 million in 2022, a change of $57,933 million. Breaking it down by segment: Consumer, excluding credit card, increased by $11,069 million; Credit card increased by $30,879 million; Wholesale increased by $16,985 million. \n\nNext, we examine the bottom table, which details purchases, sales, and reclassifications to held-for-sale. In 2022, the total purchases were $2,713 million, sales were $4,818 million, and reclassifications were $1,284 million. The net effect of these transactions is a decrease of $3,389 million. However, the increase in loan balances suggests that other factors, such as organic growth or changes in fair value, contributed to the overall increase. The Wholesale segment shows significant activity with $41,934 million in sales and $1,055 million reclassified, indicating a dynamic management of this portfolio segment. Overall, the increase in loan balances is primarily driven by net purchases exceeding sales and reclassifications, particularly in the Wholesale segment.",
+                "table_loc": "Top and bottom tables on the page",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the trends in the carrying value of loans sold and the total loans securitized from 2020 to 2022. How do these trends reflect on JPMorgan's strategy regarding loan sales and securitization?",
+                "answer": "From 2020 to 2022, the carrying value of loans sold decreased, while the total loans securitized increased. This suggests a strategic shift towards securitization over direct loan sales.",
+                "evidence_pages": [
+                    256
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the carrying value of loans sold for the years 2020, 2021, and 2022, with values of $81,153 million, $105,035 million, and $48,891 million, respectively. This indicates a decrease in the carrying value of loans sold from 2021 to 2022. In contrast, the bottom table shows the total loans securitized, which increased from $146,335 million in 2021 to $165,838 million in 2022. The increase in securitized loans alongside the decrease in loans sold suggests that JPMorgan may be focusing more on securitization as a strategy to manage its loan portfolio, possibly due to the benefits of risk distribution and capital efficiency associated with securitization.",
+                "table_loc": "Top table and bottom table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in the total pledged assets and the collateral permitted to be sold or otherwise used from 2021 to 2022. Discuss the implications of these changes on the firm's liquidity and risk management strategies.",
+                "answer": "The increase in total pledged assets and the decrease in collateral permitted to be sold or otherwise used suggest a strategic shift towards enhancing liquidity while managing risk exposure.",
+                "evidence_pages": [
+                    284
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the firm's pledged assets, which increased from $714.7 billion in 2021 to $793.2 billion in 2022. This indicates a strategic move to enhance liquidity by increasing assets that can be used for borrowing or other financial operations. The bottom table shows collateral permitted to be sold or otherwise used, which decreased from $1,471.3 billion in 2021 to $1,346.9 billion in 2022. This reduction suggests a more conservative approach to risk management, possibly to mitigate exposure to market volatility or counterparty risk. The combination of increased pledged assets and decreased collateral usage reflects a balance between maintaining liquidity and managing financial risk.",
+                "table_loc": "Top and bottom tables on the page",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in net interest income and noninterest expense for the three months ended June 30, 2023, compared to 2022. How do these changes relate to the overall change in net income for the same period?",
+                "answer": "The increase in net interest income and noninterest expense both contributed to the rise in net income, with net interest income having a more significant impact.",
+                "evidence_pages": [
+                    37
+                ],
+                "difficulty": "hard",
+                "cot": "The net interest income for the three months ended June 30, 2023, increased by 77% compared to the same period in 2022, rising from $1,779 million to $3,153 million. This substantial increase in net interest income is a major contributor to the overall increase in net income, which rose by 22% from $994 million to $1,208 million. On the other hand, noninterest expense also increased by 12%, from $1,156 million to $1,300 million. While this increase in expenses partially offsets the gains from higher net interest income, the net effect is still a significant increase in net income. Therefore, the rise in net interest income is the primary driver of the net income growth, despite the increase in noninterest expenses.",
+                "table_loc": "Selected income statement data, Selected income statement data (continued)",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of JPMorgan's common stock repurchase and Total Loss-Absorbing Capacity (TLAC) on the firm's capital structure as of June 30, 2023. Consider the number of shares repurchased and the TLAC surplus/shortfall in your analysis.",
+                "answer": "JPMorgan's repurchase of 16.7 million shares and the TLAC surplus of $66.9 billion as of June 30, 2023, indicate a strategic strengthening of capital structure, balancing shareholder returns with regulatory compliance.",
+                "evidence_pages": [
+                    52
+                ],
+                "difficulty": "hard",
+                "cot": "The table on the top left shows that JPMorgan repurchased 16.7 million shares of common stock in the three months ending June 30, 2023, with an aggregate purchase price of $2,293 million. This repurchase reduces the number of shares outstanding, potentially increasing earnings per share and shareholder value. On the bottom right, the TLAC table indicates a surplus of $66.9 billion as of June 30, 2023, suggesting that JPMorgan is well above the regulatory requirements for loss-absorbing capacity. This surplus provides a buffer against financial distress, ensuring the firm can absorb losses without jeopardizing its financial stability. The combination of share repurchases and a strong TLAC position reflects a balanced approach to enhancing shareholder value while maintaining robust capital adequacy.",
+                "table_loc": "Top left and bottom right",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of non-operating income/expense and hold adjustments on the Adjusted EBITDAR for MGM Resorts International and Las Vegas Strip Resorts for the three months ended December 31, 2022. How do these adjustments reflect on the financial performance of the company?",
+                "answer": "Non-operating income/expense and hold adjustments negatively impacted the Adjusted EBITDAR for both MGM Resorts International and Las Vegas Strip Resorts, indicating challenges in financial performance due to these factors.",
+                "evidence_pages": [
+                    14
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the impact, we first look at the non-operating income/expense in the top table. For the three months ended December 31, 2022, the interest expense and other non-operating expenses total $32,181, negatively impacting the Adjusted EBITDAR, which is $957,307. This suggests that non-operating expenses are a significant drag on profitability. \n\nNext, we examine the hold adjustments in the bottom table. The Las Vegas Strip Resorts net revenues are adjusted by a hold adjustment of $(2,984), and the Adjusted Property EBITDAR is adjusted by $(2,638). These adjustments reduce the reported figures, indicating that the actual performance was less favorable than initially reported. \n\nBoth adjustments reflect negatively on the financial performance, as they reduce the profitability metrics, highlighting the impact of external factors and operational inefficiencies on the company's financial health.",
+                "table_loc": "Top and bottom tables on page 14 of 15",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the performance of Las Vegas Strip Resorts and Regional Operations in terms of casino revenue and slots win percentage for Q4 2022. How do these metrics reflect on the overall gaming strategy of MGM Resorts?",
+                "answer": "Las Vegas Strip Resorts showed a higher slots win percentage but lower casino revenue compared to Regional Operations, indicating a focus on maximizing slot efficiency in Las Vegas while Regional Operations capitalized on higher overall casino revenue.",
+                "evidence_pages": [
+                    5
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the performance, we compare the casino revenue and slots win percentage for both Las Vegas Strip Resorts and Regional Operations. For Q4 2022, Las Vegas Strip Resorts reported a casino revenue of $554 million with a slots win percentage of 9.4%. In contrast, Regional Operations reported a higher casino revenue of $742 million but with a similar slots win percentage of 9.6%. This suggests that while Las Vegas Strip Resorts focus on optimizing slot machine efficiency, Regional Operations are more successful in generating higher overall casino revenue. The strategy might involve leveraging the tourist-heavy Las Vegas market for slot play while using regional locations to drive broader casino engagement.",
+                "table_loc": "Las Vegas Strip Resorts, Regional Operations",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of the decline in MGM China's casino revenue on the company's share of operating income from unconsolidated affiliates. Consider the percentage change in casino revenue and the operating income figures for 2022 and 2021.",
+                "answer": "The decline in MGM China's casino revenue by 47% likely contributed to the negative operating income from unconsolidated affiliates in 2022, as reduced revenue can lead to lower profitability and cash flow issues.",
+                "evidence_pages": [
+                    6
+                ],
+                "difficulty": "hard",
+                "cot": "The MGM China table shows a significant decline in casino revenue from $273 million in 2021 to $145 million in 2022, a 47% decrease. This decline in revenue can negatively impact the company's overall profitability and cash flow, as lower revenue often leads to reduced margins and operational challenges. The Unconsolidated Affiliates table indicates a negative operating income of $(40,325) thousand in 2022, compared to $(8,047) thousand in 2021. The substantial decline in casino revenue likely exacerbated the negative operating income from unconsolidated affiliates, as the company's share of income from these affiliates would be adversely affected by reduced profitability in its core operations.",
+                "table_loc": "MGM China table and Unconsolidated Affiliates table",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of domestic and foreign operations on the overall income before taxes and the corresponding tax provisions for MGMRESORTS in 2022. How do these figures reflect on the company's tax strategy?",
+                "answer": "In 2022, MGMRESORTS had a positive income before taxes from domestic operations ($4,251,418) and a negative income from foreign operations (-$3,347,619), resulting in a net positive income before taxes of $903,799. The tax provision for domestic operations was a significant expense, while foreign operations resulted in a tax benefit, indicating a strategic use of losses to reduce overall tax liability.",
+                "evidence_pages": [
+                    86
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the income before taxes for domestic and foreign operations. In 2022, domestic operations had a positive income of $4,251,418, while foreign operations had a negative income of -$3,347,619, leading to a net income before taxes of $903,799. The bottom table details the tax provisions, where domestic operations incurred a significant tax provision, while foreign operations resulted in a tax benefit of $226,111. This suggests that MGMRESORTS strategically utilized foreign losses to offset domestic tax liabilities, reflecting a tax strategy aimed at minimizing overall tax expenses.",
+                "table_loc": "Income before taxes: Top table; Tax provisions: Bottom table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "PEPSICO_2023Q1_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of foreign exchange on PepsiCo's reported and organic results for Q1 2023. How does the foreign exchange impact on net revenue and EPS in the GAAP results compare to the organic revenue growth and core constant currency EPS change in the non-GAAP results?",
+                "answer": "The foreign exchange impact negatively affected the GAAP results, reducing net revenue by 2.5% and EPS by 2%. In contrast, the organic revenue growth and core constant currency EPS change in the non-GAAP results were positive, at 14.3% and 18%, respectively, indicating strong underlying performance when excluding currency effects.",
+                "evidence_pages": [
+                    1
+                ],
+                "difficulty": "hard",
+                "cot": "The GAAP results show a negative impact from foreign exchange, with net revenue and EPS both reduced by 2.5% and 2%, respectively. This suggests that currency fluctuations had a detrimental effect on the reported financials. On the other hand, the non-GAAP results, which exclude these currency effects, show a robust organic revenue growth of 14.3% and a core constant currency EPS change of 18%. This indicates that the company's underlying performance was strong, and the negative currency impact masked this strength in the GAAP results. By comparing these figures, we can see that the core business performance was solid, but the reported figures were adversely affected by external currency factors.",
+                "table_loc": "Reported (GAAP) First-Quarter 2023 Results; Organic/Core (non-GAAP) First-Quarter 2023 Results",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "PEPSICO_2023Q1_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in operating profit for PepsiCo Beverages North America from Q1 2022 to Q1 2023. Consider the impact of restructuring and impairment charges, as well as acquisition and divestiture-related charges. How do these factors contribute to the change in the core, non-GAAP measure?",
+                "answer": "The core, non-GAAP operating profit for PepsiCo Beverages North America increased from $450 million in Q1 2022 to $490 million in Q1 2023. This increase is primarily due to the absence of significant acquisition and divestiture-related charges in 2023, which were $3,024 million in 2022.",
+                "evidence_pages": [
+                    14
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the change in operating profit for PepsiCo Beverages North America, we compare the figures from Q1 2022 and Q1 2023. In Q1 2022, the reported GAAP measure was $3,434 million, with significant acquisition and divestiture-related charges of $3,024 million, leading to a core, non-GAAP measure of $450 million. In Q1 2023, the reported GAAP measure was $483 million, with only $5 million in restructuring and impairment charges and $2 million in acquisition and divestiture-related charges, resulting in a core, non-GAAP measure of $490 million. The substantial reduction in acquisition and divestiture-related charges from 2022 to 2023 is the primary factor contributing to the increase in the core, non-GAAP measure.",
+                "table_loc": "Top and Bottom Tables",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "PEPSICO_2023_8K_dated-2023-05-05",
+        "qa_pairs": [
+            {
+                "question": "Analyze the voting patterns for the shareholder proposals regarding the independent Board Chair and the global transparency report. What can you infer about shareholder priorities from these results?",
+                "answer": "The voting patterns suggest that shareholders prioritize issues related to board structure over transparency, as indicated by the higher number of votes against the independent Board Chair proposal compared to the global transparency report.",
+                "evidence_pages": [
+                    4
+                ],
+                "difficulty": "hard",
+                "cot": "The table for the independent Board Chair proposal shows 746,982,272 votes against and 250,838,697 votes for, indicating strong opposition. In contrast, the global transparency report had 814,416,953 votes against and 185,034,699 votes for. The higher number of votes against the Board Chair proposal suggests that shareholders may prioritize maintaining the current board structure over increasing transparency. This inference is based on the relative voting margins and the context of corporate governance priorities.",
+                "table_loc": "(5) and (6)",
+                "report_type": "dated-2023-05-05"
+            }
+        ]
+    },
+    {
+        "doc_name": "PFIZER_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of foreign currency translation adjustments on Pfizer's accumulated other comprehensive loss from 2019 to 2021. How does this compare to the impact of derivative financial instruments over the same period?",
+                "answer": "Foreign currency translation adjustments consistently contributed to Pfizer's accumulated other comprehensive loss from 2019 to 2021, with a net loss of $6,172 million by the end of 2021. In contrast, derivative financial instruments showed a smaller impact, with a net gain of $119 million by the end of 2021.",
+                "evidence_pages": [
+                    82
+                ],
+                "difficulty": "hard",
+                "cot": "To analyze the impact, we first examine the 'Foreign Currency Translation Adjustments' and 'Derivative Financial Instruments' columns in the 'Accumulated Other Comprehensive Loss, Excluding Noncontrolling Interests' table. From 2019 to 2021, foreign currency translation adjustments show a consistent negative impact, with balances of $(6,075) million in 2019, $(5,936) million in 2020, and $(6,172) million in 2021. This indicates a persistent loss in this category. In contrast, derivative financial instruments show a smaller and more variable impact, with balances of $167 million in 2019, $20 million in 2020, and $119 million in 2021, indicating a net gain by the end of 2021. This comparison highlights the more significant and consistent negative impact of foreign currency translation adjustments on Pfizer's accumulated other comprehensive loss compared to the relatively minor and positive impact of derivative financial instruments.",
+                "table_loc": "Table 1: Components of the Tax Provision/(Benefit) on Other Comprehensive Income/(Loss); Table 2: Accumulated Other Comprehensive Loss, Excluding Noncontrolling Interests",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "Pfizer_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Using the tables provided, analyze the change in Pfizer's short-term and long-term investments from December 31, 2022, to July 2, 2023. How do these changes relate to the net unrealized gains/losses on equity securities over the same period?",
+                "answer": "Pfizer's short-term investments increased significantly from $22,316 million to $42,153 million, while long-term investments decreased slightly from $4,036 million to $3,644 million. The net unrealized gains/losses on equity securities showed a loss of $121 million for the six months ended July 2, 2023, indicating that despite the increase in short-term investments, the equity securities experienced a net loss.",
+                "evidence_pages": [
+                    21
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows the classification of Pfizer's investments as of July 2, 2023, and December 31, 2022. Short-term investments increased from $22,316 million to $42,153 million, primarily due to a rise in equity securities with readily determinable fair values and available-for-sale debt securities. Long-term investments slightly decreased from $4,036 million to $3,644 million. The bottom table provides details on net unrealized gains/losses on equity securities, showing a net loss of $121 million for the six months ended July 2, 2023. This suggests that while short-term investments grew, the equity securities component faced a net loss, possibly due to market conditions affecting equity valuations.",
+                "table_loc": "Top and bottom tables on the page.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "Pfizer_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of changes in long-term debt and derivative financial instruments on Pfizer's financial risk profile between December 31, 2022, and July 2, 2023. Consider both the principal amount of long-term debt and the fair value of derivative instruments.",
+                "answer": "Between December 31, 2022, and July 2, 2023, Pfizer's long-term debt increased significantly, indicating a higher leverage and potential interest rate risk. However, the fair value of derivative assets also increased, suggesting effective hedging strategies to mitigate financial risks.",
+                "evidence_pages": [
+                    23
+                ],
+                "difficulty": "hard",
+                "cot": "The first table shows an increase in the total long-term debt from $32,080 million to $60,963 million, indicating a significant rise in leverage. This increase could expose Pfizer to higher interest rate risks, especially if interest rates rise. The second table shows the fair value of derivative assets increased from $1,078 million to $853 million, while liabilities decreased from $1,889 million to $1,606 million. This suggests that Pfizer has improved its hedging effectiveness, potentially offsetting some of the risks associated with the increased debt. The combination of these factors indicates a complex financial risk profile where increased debt is partially mitigated by effective use of derivatives.",
+                "table_loc": "Page 20, Tables 1 and 2",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "ULTABEAUTY_2023Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "Analyze the relationship between the expansion of store space and the percentage of net sales by category for Ulta Beauty in 2023. How might changes in store space impact sales distribution across categories?",
+                "answer": "The expansion of store space in 2023 likely supports increased sales in categories like cosmetics and haircare, which have high sales percentages. This suggests a strategic alignment between space expansion and product demand.",
+                "evidence_pages": [
+                    9
+                ],
+                "difficulty": "hard",
+                "cot": "The top table provides data on the total gross square feet at the beginning and end of each quarter in 2022, along with the square footage for stores opened or expanded. The bottom table shows the percentage of net sales by category for 13 and 52 weeks ending January 28, 2023, and January 29, 2022. By analyzing these tables, we can infer that the increase in store space, particularly in the 4th quarter, may be aligned with the high demand for cosmetics and haircare products, which consistently hold the largest share of net sales. This suggests that Ulta Beauty's expansion strategy might be focused on enhancing the availability and display of high-demand products, thereby potentially increasing sales in these categories.",
+                "table_loc": "Top: Store Space Data; Bottom: Sales by Category",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "VERIZON_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the relationship between Verizon's fair value of short-term and long-term debt and its derivative instruments for the year 2021. How might changes in the fair value of debt impact the company's derivative strategy?",
+                "answer": "In 2021, Verizon's fair value of debt increased, which may necessitate a more robust derivative strategy to hedge against interest rate fluctuations, ensuring financial stability.",
+                "evidence_pages": [
+                    85
+                ],
+                "difficulty": "hard",
+                "cot": "The fair value of Verizon's short-term and long-term debt increased from $156,752 million in 2020 to $169,205 million in 2021. This increase in fair value suggests a higher market valuation of the company's debt, which could be due to changes in interest rates or credit risk perceptions. Concurrently, Verizon's use of derivative instruments, such as interest rate swaps and cross currency swaps, is aimed at managing exposure to fluctuations in foreign exchange rates and interest rates. The notional amounts of these derivatives in 2021 were significant, with interest rate swaps at $19,779 million and cross currency swaps at $32,502 million. As the fair value of debt increases, Verizon may need to adjust its derivative strategy to effectively hedge against potential interest rate increases, which could impact the cost of debt servicing. This adjustment ensures that the company maintains financial stability and mitigates risks associated with interest rate volatility.",
+                "table_loc": "Page 85, Fair Value of Short-term and Long-term Debt; Derivative Instruments",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "VERIZON_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the change in Verizon's total long-term debt from 2021 to 2022, considering both the outstanding long-term debt obligations and the maturities of long-term debt. How does the maturity profile impact the company's financial strategy?",
+                "answer": "Verizon's total long-term debt decreased from $150,686 million in 2021 to $150,639 million in 2022. The maturity profile shows significant debt due in 2023 and 2024, which may require strategic refinancing or repayment plans to manage cash flow and interest rate risks.",
+                "evidence_pages": [
+                    77
+                ],
+                "difficulty": "hard",
+                "cot": "The top table shows Verizon's total long-term debt, including current maturities, decreased slightly from $150,686 million in 2021 to $150,639 million in 2022. The bottom table provides the maturity profile, indicating $9,279 million is due in 2023 and $16,252 million in 2024. This concentration of maturities in the near term suggests Verizon may need to focus on refinancing or repaying these obligations to manage liquidity and interest rate exposure effectively. The financial strategy will likely involve balancing these repayments with ongoing operational and capital expenditure needs.",
+                "table_loc": "Top: Outstanding long-term debt obligations; Bottom: Maturities of long-term debt",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "WALMART_2018_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the relationship between the quarterly high market prices of Walmart's common stock in 2018 and the dividends paid per share for fiscal 2018. How might the stock price fluctuations have influenced dividend decisions?",
+                "answer": "The high market prices in 2018 showed an increasing trend, which might have supported consistent dividend payments of $0.52 per share, reflecting confidence in financial stability.",
+                "evidence_pages": [
+                    33
+                ],
+                "difficulty": "hard",
+                "cot": "The table 'Market Price of Common Stock' shows the high market prices for each quarter in 2018: $75.77, $80.47, $89.11, and $109.98. The 'Dividends Payable Per Share' table indicates that dividends were consistently paid at $0.52 per share throughout fiscal 2018. The increasing trend in high market prices suggests a positive market perception and financial performance, which likely supported the decision to maintain stable dividend payments. The stability in dividends despite fluctuations in stock prices indicates a strategic decision to project financial stability and shareholder value.",
+                "table_loc": "Market Price of Common Stock, Dividends Payable Per Share",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "WALMART_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the impact of Walmart's short-term and long-term borrowing strategies on its net cash used in financing activities for fiscal year 2019. Consider the data provided in the tables for short-term borrowings and long-term debt.",
+                "answer": "Walmart's net cash used in financing activities for 2019 was significantly impacted by its borrowing strategies, with a notable increase in long-term debt issuance contributing to a $15.9 billion net cash outflow.",
+                "evidence_pages": [
+                    38
+                ],
+                "difficulty": "hard",
+                "cot": "The table for net cash used in financing activities shows a decrease of $15.9 billion in 2019. The short-term borrowings table indicates a maximum amount outstanding of $13,329 million in 2019, with an average daily short-term borrowings of $10,635 million. The long-term debt table shows an issuance of $15,774 million in 2019, with payments of $3,763 million. The significant issuance of long-term debt, primarily for the Flipkart acquisition, aligns with the large net cash outflow in financing activities, indicating that the increase in debt was a major factor in the cash flow changes.",
+                "table_loc": "Short-term Borrowings and Long-term Debt",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "WALMART_2020_10K",
+        "qa_pairs": [
+            {
+                "question": "Analyze the relationship between Walmart's total assets and its free cash flow over the years 2018 to 2020. How does the change in total assets correlate with the change in free cash flow, and what might this indicate about Walmart's financial strategy?",
+                "answer": "The increase in total assets from 2018 to 2020 does not directly correlate with an increase in free cash flow, which decreased in 2020. This suggests that while Walmart is expanding its asset base, it may be investing in areas that do not immediately enhance cash flow, possibly indicating a long-term growth strategy.",
+                "evidence_pages": [
+                    35
+                ],
+                "difficulty": "hard",
+                "cot": "The 'Certain Balance Sheet Data' table shows total assets increasing from $204,522 million in 2018 to $236,495 million in 2020. Meanwhile, the 'Free Cash Flow' table indicates a decrease in free cash flow from $18,286 million in 2018 to $14,550 million in 2020. This lack of direct correlation suggests that Walmart's asset growth is not immediately translating into increased free cash flow. The company might be investing in long-term projects or assets that do not provide immediate cash returns, reflecting a strategic focus on future growth rather than short-term liquidity.",
+                "table_loc": "Balance Sheet Data, Free Cash Flow",
+                "report_type": "10K"
+            }
+        ]
+    }
+]

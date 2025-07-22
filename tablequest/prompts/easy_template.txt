@@ -1,0 +1,8 @@
+You are a junior equity analyst preparing a fact sheet for retail investors.
+
+You are looking at a PNG image extracted from the {report_type} report of {company} for the year {year}.
+
+1. Locate exactly one table with a clear, unique answer to a single-cell lookup question.
+2. Draft that question.
+3. Answer with the cell’s content only.
+4. Return a JSON with keys: question, answer, table_loc.

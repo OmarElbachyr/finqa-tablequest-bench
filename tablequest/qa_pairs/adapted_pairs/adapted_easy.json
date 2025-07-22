@@ -1,0 +1,930 @@
+[
+    {
+        "doc_name": "3M_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What is the total amount of future maturities of long-term debt for 2026?",
+                "answer": "$1,458",
+                "evidence_pages": [
+                    19
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Future Maturities of Long-term Debt table, row for 2026, last column.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "ACTIVISIONBLIZZARD_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the fair value gain (loss) for Buy USD, Sell GBP as of December 31, 2019?",
+                "answer": "$25",
+                "evidence_pages": [
+                    61
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top of the page, under 'Foreign Currency Forward Contracts Not Designated as Hedges' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "ADOBE_2015_10K",
+        "qa_pairs": [
+            {
+                "question": "What is included in the calculation of Document Cloud ARR?",
+                "answer": "Annual Value of Document Cloud Subscriptions and Services + Annual Document Cloud ETLA Contract Value",
+                "evidence_pages": [
+                    39
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom left of page 39.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2020_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the estimated future amortization expense for intangible assets in 2023?",
+                "answer": "171.9",
+                "evidence_pages": [
+                    71
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top of the page, under the heading 'Estimated future amortization expense for intangible assets follows:'.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What is the volume of PET resin for June 30, 2022?",
+                "answer": "16,886,520 lbs.",
+                "evidence_pages": [
+                    21
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top table, second row, second column under June 30, 2022.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the interest expense for the three months ended December 31, 2022?",
+                "answer": "(79)",
+                "evidence_pages": [
+                    38
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Consolidated Interest Expense table, first row, 2022 column.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the interest expense for the six months ended December 31, 2022?",
+                "answer": "(138)",
+                "evidence_pages": [
+                    41
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Consolidated Interest Expense table, first row, second column.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the net cash used in financing activities for the six months ended December 31, 2022?",
+                "answer": "(90)",
+                "evidence_pages": [
+                    47
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Overview table, row 'Net cash used in financing activities', column '2022'.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the total impairment loss recognized in the consolidated statements of income for the year 2023?",
+                "answer": "18",
+                "evidence_pages": [
+                    59
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "middle of the page, under 'Impairment of Long-lived Assets' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMCOR_2023_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the estimated amortization expense for intangible assets in fiscal year 2024?",
+                "answer": "173",
+                "evidence_pages": [
+                    73
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top of the page, under the heading 'Estimated future amortization expense for intangible assets is as follows:'.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANEXPRESS_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the outstanding balance of short-term borrowings for American Express in 2022?",
+                "answer": "$1,348",
+                "evidence_pages": [
+                    124
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 121, Note 8, Debt - Short-Term Borrowings Table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANEXPRESS_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the Schedule Rate when Amex's ROE is within the ROE Target Range?",
+                "answer": "9%",
+                "evidence_pages": [
+                    236
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Schedule A: Deferral Account Schedule Rate table.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANWATERWORKS_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the infrastructure surcharge for New Jersey in 2021?",
+                "answer": "26",
+                "evidence_pages": [
+                    100
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top table, row 1, column 2",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANWATERWORKS_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the allowance for equity funds used during construction in 2021?",
+                "answer": "27",
+                "evidence_pages": [
+                    95
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top left of the page, under 'Allowance for Funds Used During Construction' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "AMERICANWATERWORKS_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the target award for an actual compounded EPS growth of 8.0%?",
+                "answer": "100%",
+                "evidence_pages": [
+                    167
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 10, Exhibit A, Performance Goals Table.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2017_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the Fitch Ratings outlook for Best Buy in 2017?",
+                "answer": "Stable",
+                "evidence_pages": [
+                    12
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top left corner of the page, under 'Rating Agency' table",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2017_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the impact of foreign currency exchange rate fluctuations on revenue in fiscal 2017 compared to fiscal 2016?",
+                "answer": "(0.2)%",
+                "evidence_pages": [
+                    32
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Fiscal 2017 Results Compared With Fiscal 2016 table, first row.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2017_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the percentage of revenue from Computing and Mobile Phones for the year ended January 28, 2017?",
+                "answer": "48%",
+                "evidence_pages": [
+                    38
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top table, second row, second column.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the percentage of revenue mix for Appliances on February 3, 2018?",
+                "answer": "8%",
+                "evidence_pages": [
+                    37
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Revenue Mix Summary, February 3, 2018, Appliances row.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the estimated useful life of buildings according to the table?",
+                "answer": "5-35",
+                "evidence_pages": [
+                    61
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Estimated useful lives by major asset category are as follows: Asset - Buildings",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "BESTBUY_2024Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total cash used in investing activities for the six months ended July 29, 2023?",
+                "answer": "(381)",
+                "evidence_pages": [
+                    21
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Cash Flows table, first row under 'Investing activities' for July 29, 2023.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "CORNING_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the effective tax rate for Corning in 2021?",
+                "answer": "20.5%",
+                "evidence_pages": [
+                    29
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Provision for income taxes table, Effective tax rate row, 2021 column",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "CORNING_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was Corning's core net sales in 2022?",
+                "answer": "14,805",
+                "evidence_pages": [
+                    30
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom of the page, under 'CORE PERFORMANCE MEASURES' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "COSTCO_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the gross margin percentage for Costco in 2021?",
+                "answer": "11.13 %",
+                "evidence_pages": [
+                    26
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Gross Margin table, 2021 row, Gross margin percentage column",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "CVSHEALTH_2018_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the weighted average exercise price of shares outstanding at December 31, 2018?",
+                "answer": "$71.15",
+                "evidence_pages": [
+                    360
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top table, row 'Outstanding at December 31, 2018', column 'Weighted Average Exercise Price'",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "GENERALMILLS_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What were the net sales for General Mills in fiscal year 2018?",
+                "answer": "$17,057.4",
+                "evidence_pages": [
+                    64
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom of the page, above 'NOTE 4' section",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "GENERALMILLS_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the total tax loss carryforwards for May 26, 2019?",
+                "answer": "150.6",
+                "evidence_pages": [
+                    98
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top table, second row, last column",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "What were Johnson & Johnson's reported sales for Q4 2022?",
+                "answer": "$23,706",
+                "evidence_pages": [
+                    1
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Overall Financial Results table, Q4 2022, Reported Sales",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022Q4_EARNINGS",
+        "qa_pairs": [
+            {
+                "question": "What is the mid-point of the Adjusted Operational Sales for January 2023?",
+                "answer": "$97.4B",
+                "evidence_pages": [
+                    5
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top table, second row, third column.",
+                "report_type": "EARNINGS"
+            }
+        ]
+    },
+    {
+        "doc_name": "JOHNSON-JOHNSON_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the number of employees at Johnson & Johnson in 2022?",
+                "answer": "155,800",
+                "evidence_pages": [
+                    11
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "top center of the page under 'Employees and Human Capital Management' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total noncash compensation expense related to employee share-based incentive plans for the three months ended March 31, 2021?",
+                "answer": "$904",
+                "evidence_pages": [
+                    114
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 114, Note 8 - Employee share-based incentives table",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total retained loans amount as of March 31, 2021?",
+                "answer": "302,392",
+                "evidence_pages": [
+                    123
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 123, Table 1",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "What is the total carrying value of the principal investment portfolios as of March 31, 2021?",
+                "answer": "$25.3",
+                "evidence_pages": [
+                    65
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom right of the page",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2021Q1_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the Derivatives CVA for the three months ended March 31, 2021?",
+                "answer": "240",
+                "evidence_pages": [
+                    93
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom right corner of the page.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total retained loans amount as of June 30, 2022?",
+                "answer": "302,631",
+                "evidence_pages": [
+                    137
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 137, Table 1",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total restricted cash as of June 30, 2022?",
+                "answer": "27.4",
+                "evidence_pages": [
+                    166
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Note 20 - Restricted cash and other restricted assets table.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total carrying value of the principal investment portfolios on June 30, 2022?",
+                "answer": "33.3",
+                "evidence_pages": [
+                    74
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom right of the page, under 'Principal investment risk' section.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the principal amount of securities transferred to re-securitization VIEs in 2022?",
+                "answer": "$16,128",
+                "evidence_pages": [
+                    251
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top right of the page, under 'Year ended December 31, (in millions)' column for 2022.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the total restricted cash for JPMorgan in 2022?",
+                "answer": "26.8",
+                "evidence_pages": [
+                    275
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 273, Note 26 - Restricted cash, other restricted assets and intercompany funds transfers table.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the Firm's effective GSIB surcharge under Method 1 for the year ended December 31, 2022?",
+                "answer": "2.0%",
+                "evidence_pages": [
+                    92
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top of the page, under 'Management\u2019s discussion and analysis' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total amount of retained loans as of June 30, 2023?",
+                "answer": "396,195",
+                "evidence_pages": [
+                    149
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 149, Table 1",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What is the total number of loan modifications for the six months ended June 30, 2023?",
+                "answer": "7",
+                "evidence_pages": [
+                    161
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Page 161, Table 1",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What was the total restricted cash as of June 30, 2023?",
+                "answer": "25.6",
+                "evidence_pages": [
+                    181
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Note 22 - Restricted cash and other restricted assets table.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "JPMORGAN_2023Q2_10Q",
+        "qa_pairs": [
+            {
+                "question": "What is the total carrying value of the principal investment portfolios as of June 30, 2023?",
+                "answer": "38.9",
+                "evidence_pages": [
+                    83
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom right of the page, under 'Principal investment risk' section.",
+                "report_type": "10Q"
+            }
+        ]
+    },
+    {
+        "doc_name": "KRAFTHEINZ_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the pre-tax gain on sale of Heinz India?",
+                "answer": "$249",
+                "evidence_pages": [
+                    64
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Heinz India Transaction table, first table on the page.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2020_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the amount of casino receivables for MGM Resorts as of December 31, 2020?",
+                "answer": "$260,998",
+                "evidence_pages": [
+                    56
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top of the table, first row under 'December 31, 2020' column.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "MGMRESORTS_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the loss reserve for casino accounts receivable for MGM Resorts in 2022?",
+                "answer": "$97,929",
+                "evidence_pages": [
+                    49
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom of the page, under 'The following table shows key statistics related to our casino receivables:' section.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "MICROSOFT_2023_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the average price per share for the Employee Stock Purchase Plan in 2023?",
+                "answer": "245.59",
+                "evidence_pages": [
+                    92
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom table, last row, 2023 column.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "NIKE_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the cash paid for amounts included in the measurement of lease liabilities for the year 2021?",
+                "answer": "583",
+                "evidence_pages": [
+                    94
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top of the image, under 'YEAR ENDED MAY 31,' table.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "NIKE_2023_10K",
+        "qa_pairs": [
+            {
+                "question": "How many NIKE Brand factory stores are there outside the United States?",
+                "answer": "560",
+                "evidence_pages": [
+                    7
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "NON-U.S. RETAIL STORES table, first row, second column.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "PAYPAL_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the total property and equipment, net for PayPal as of December 31, 2022?",
+                "answer": "$1,730",
+                "evidence_pages": [
+                    86
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom table, last row, first column (Total property and equipment, net) and second column (2022)",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "PAYPAL_2022_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the total derivative liabilities as of December 31, 2022?",
+                "answer": "$298",
+                "evidence_pages": [
+                    99
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top Table - Fair Value of Derivative Contracts, Derivative Liabilities Section, 2022 Column, Total Derivative Liabilities Row",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "PEPSICO_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the total cash and cash equivalents and restricted cash for PEPSICO in 2021?",
+                "answer": "$5,707",
+                "evidence_pages": [
+                    109
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Statement of Cash Flows table, bottom row, 2021 column",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "PEPSICO_2023_8K_dated-2023-05-05",
+        "qa_pairs": [
+            {
+                "question": "How many votes were cast 'For' the appointment of KPMG LLP as the independent registered public accounting firm for PepsiCo for fiscal year 2023?",
+                "answer": "1,125,448,378",
+                "evidence_pages": [
+                    3
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Table (2) in the image.",
+                "report_type": "dated-2023-05-05"
+            }
+        ]
+    },
+    {
+        "doc_name": "PFIZER_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the cost of share purchases in 2020?",
+                "answer": "$",
+                "evidence_pages": [
+                    95
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Note 12, Equity, A. Common Stock Purchases, Table (SHARES IN MILLIONS, DOLLARS IN BILLIONS)",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "VERIZON_2021_10K",
+        "qa_pairs": [
+            {
+                "question": "What was the accumulated benefit obligation for Verizon in 2021?",
+                "answer": "$456",
+                "evidence_pages": [
+                    90
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Top table, first row under 'At December 31, 2021' column.",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "WALMART_2019_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the amount of deferred gift card revenue as of January 31, 2019?",
+                "answer": "1,932",
+                "evidence_pages": [
+                    58
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "bottom of the page, under 'Receivables and deferred gift card revenue from transactions with customers' section",
+                "report_type": "10K"
+            }
+        ]
+    },
+    {
+        "doc_name": "WALMART_2020_10K",
+        "qa_pairs": [
+            {
+                "question": "What is the annual membership fee for Plus Membership?",
+                "answer": "$100",
+                "evidence_pages": [
+                    11
+                ],
+                "difficulty": "easy",
+                "cot": null,
+                "table_loc": "Membership table at the top of the image",
+                "report_type": "10K"
+            }
+        ]
+    }
+]

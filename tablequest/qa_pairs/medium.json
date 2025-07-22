@@ -1,0 +1,532 @@
+[
+  {
+    "image": "tablequest/sampled_pages/medium/3M_2022_10K_p72.png",
+    "difficulty": "medium",
+    "question": "What is the total of 'Accruals not currently deductible' and 'Pension costs' for the year 2022?",
+    "answer": "239",
+    "cot": "1. Identify the values for 'Accruals not currently deductible' and 'Pension costs' for the year 2022 from the table.\\n2. 'Accruals not currently deductible' for 2022 is 232.\\n3. 'Pension costs' for 2022 is 7.\\n4. Add these two values: 232 + 7 = 239.\\n5. The total is 239.",
+    "table_loc": "Components of Deferred Tax Assets and Liabilities",
+    "report_type": "10K",
+    "page_number": 72
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/3M_2023Q2_10Q_p65.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in Adjusted business segment operating income (non-GAAP measure) from the three months ended June 30, 2022, to the three months ended June 30, 2023?",
+    "answer": "-2.5",
+    "cot": "1. Identify the Adjusted business segment operating income for the three months ended June 30, 2023, which is $614 million.\n2. Identify the Adjusted business segment operating income for the three months ended June 30, 2022, which is $630 million.\n3. Calculate the change in income: $614 million - $630 million = -$16 million.\n4. Calculate the percentage change: (-$16 million / $630 million) * 100 = -2.5%.\n5. The percentage change in Adjusted business segment operating income is -2.5%.",
+    "table_loc": "page 65",
+    "report_type": "10Q",
+    "page_number": 65
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/3M_2023Q2_10Q_p66.png",
+    "difficulty": "medium",
+    "question": "What is the difference in the percent of sales between the GAAP and non-GAAP measures for the three months ended June 30, 2023?",
+    "answer": "1.1",
+    "cot": "1. Identify the percent of sales for the GAAP measure for the three months ended June 30, 2023, which is 18.7%.\n2. Identify the percent of sales for the non-GAAP measure for the same period, which is 19.8%.\n3. Calculate the difference: 19.8% - 18.7% = 1.1%.\n4. The difference in the percent of sales between the GAAP and non-GAAP measures is 1.1%.",
+    "table_loc": "Transportation and Electronics Business",
+    "report_type": "10Q",
+    "page_number": 66
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/AMCOR_2023Q4_EARNINGS_p10.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in net sales for Rigid Packaging from fiscal year 2022 to 2023 for the Twelve Months Ended June 30?",
+    "answer": "4.33",
+    "cot": "1. Identify the net sales for Rigid Packaging for fiscal years 2022 and 2023 for the Twelve Months Ended June 30.\\n   - 2023: 3,540 million\\n   - 2022: 3,393 million\\n2. Calculate the change in net sales: \\n   - Change = 3,540 - 3,393 = 147 million\\n3. Calculate the percentage change: \\n   - Percentage Change = (Change / 2022 Net Sales) * 100\\n   - Percentage Change = (147 / 3,393) * 100\\n   - Percentage Change ≈ 4.33%",
+    "table_loc": "Twelve Months Ended June 30",
+    "report_type": "EARNINGS",
+    "page_number": 10
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/AMCOR_2023Q4_EARNINGS_p8.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in net income attributable to Amcor plc from the three months ended June 30, 2022, to the three months ended June 30, 2023?",
+    "answer": "66.06",
+    "cot": "1. Identify the net income attributable to Amcor plc for the three months ended June 30, 2022, which is $109 million.\n2. Identify the net income attributable to Amcor plc for the three months ended June 30, 2023, which is $181 million.\n3. Calculate the increase in net income: $181 million - $109 million = $72 million.\n4. Calculate the percentage increase: ($72 million / $109 million) * 100 = 66.06%.\n5. The percentage increase in net income attributable to Amcor plc is 66.06%.",
+    "table_loc": "U.S. GAAP Condensed Consolidated Statements of Income",
+    "report_type": "EARNINGS",
+    "page_number": 8
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/AMERICANWATERWORKS_2021_10K_p105.png",
+    "difficulty": "medium",
+    "question": "What is the total revenue from 'Water services' and 'Wastewater services' under 'Regulated Businesses'?",
+    "answer": "3035",
+    "cot": "1. Identify the revenues from 'Water services' and 'Wastewater services' under 'Regulated Businesses'.\n2. 'Water services' total revenue is $2,868 million.\n3. 'Wastewater services' total revenue is $167 million.\n4. Add these two amounts together: $2,868 + $167 = $3,035 million.\n5. The total revenue from 'Water services' and 'Wastewater services' is $3,035 million.",
+    "table_loc": "Top Table",
+    "report_type": "10K",
+    "page_number": 105
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/AMERICANWATERWORKS_2021_10K_p136.png",
+    "difficulty": "medium",
+    "question": "What is the total operating income for the Regulated Businesses segment?",
+    "answer": "1,162",
+    "cot": "1. Identify the relevant data for the Regulated Businesses segment.\n2. Operating income is calculated as Operating revenues minus Total operating expenses.\n3. From the table, Operating revenues for Regulated Businesses = $3,384 million.\n4. Total operating expenses for Regulated Businesses = $2,222 million.\n5. Calculate Operating income: $3,384 - $2,222 = $1,162 million.",
+    "table_loc": "Note 21: Segment Information",
+    "report_type": "10K",
+    "page_number": 136
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/AMERICANWATERWORKS_2022_10K_p99.png",
+    "difficulty": "medium",
+    "question": "What is the percentage of total operating revenues that come from water services?",
+    "answer": "79.73",
+    "cot": "1. Identify the total operating revenues from the table, which is $3,930.\n2. Identify the total water services revenue, which is $3,133.\n3. Calculate the percentage of total operating revenues that come from water services using the formula:\n   \\[ \\text{Percentage} = \\left( \\frac{\\text{Water Services Revenue}}{\\text{Total Operating Revenues}} \\right) \\times 100 \\]\n4. Substitute the values:\n   \\[ \\text{Percentage} = \\left( \\frac{3,133}{3,930} \\right) \\times 100 \\approx 79.73 \\%\n5. The percentage of total operating revenues that come from water services is approximately 79.73%.\"}  \n",
+    "table_loc": "Page 97",
+    "report_type": "10K",
+    "page_number": 99
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/BESTBUY_2023_10K_p28.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in Non-GAAP operating income from 2022 to 2023?",
+    "answer": "-34.4",
+    "cot": "1. Identify the Non-GAAP operating income for 2022 and 2023 from the table.\\n   - 2023 Non-GAAP operating income: $2,028 million\\n   - 2022 Non-GAAP operating income: $3,092 million\\n2. Calculate the change in Non-GAAP operating income from 2022 to 2023.\\n   - Change = 2023 Non-GAAP operating income - 2022 Non-GAAP operating income\\n   - Change = $2,028 million - $3,092 million = -$1,064 million\\n3. Calculate the percentage change.\\n   - Percentage Change = (Change / 2022 Non-GAAP operating income) * 100\\n   - Percentage Change = (-$1,064 million / $3,092 million) * 100\\n   - Percentage Change = -34.4%",
+    "table_loc": "Non-GAAP Financial Measures",
+    "report_type": "10K",
+    "page_number": 28
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/BESTBUY_2024Q2_10Q_p4.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in net earnings for the three months ended July 29, 2023, compared to the three months ended July 30, 2022?",
+    "answer": "-10.46",
+    "cot": "1. Identify the net earnings for the three months ended July 29, 2023, and July 30, 2022.\\n   - July 29, 2023: $274 million\\n   - July 30, 2022: $306 million\\n2. Calculate the change in net earnings.\\n   - Change = $274 million - $306 million = -$32 million\\n3. Calculate the percentage change.\\n   - Percentage Change = (Change / July 30, 2022 Net Earnings) * 100\\n   - Percentage Change = (-$32 million / $306 million) * 100\\n   - Percentage Change = -10.46%",
+    "table_loc": "Condensed Consolidated Statements of Earnings",
+    "report_type": "10Q",
+    "page_number": 4
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/BLOCK_2016_10K_p46.png",
+    "difficulty": "medium",
+    "question": "What was the percentage increase in Adjusted Revenue from 2014 to 2016?",
+    "answer": "52%",
+    "cot": "1. Identify the Adjusted Revenue for the years 2014 and 2016 from the table.\\n   - 2014 Adjusted Revenue: $452,168\\n   - 2016 Adjusted Revenue: $686,618\\n2. Calculate the increase in Adjusted Revenue from 2014 to 2016.\\n   - Increase = 2016 Adjusted Revenue - 2014 Adjusted Revenue\\n   - Increase = $686,618 - $452,168 = $234,450\\n3. Calculate the percentage increase.\\n   - Percentage Increase = (Increase / 2014 Adjusted Revenue) * 100\\n   - Percentage Increase = ($234,450 / $452,168) * 100 ≈ 51.85%\\n4. Round the percentage to the nearest whole number.\\n   - Rounded Percentage Increase = 52%",
+    "table_loc": "Operating Metric Overview",
+    "report_type": "10K",
+    "page_number": 46
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/BOEING_2022_10K_p49.png",
+    "difficulty": "medium",
+    "question": "What is the difference in core operating loss (non-GAAP) between 2022 and 2020?",
+    "answer": "$9,460",
+    "cot": "1. Identify the core operating loss (non-GAAP) for 2022 and 2020 from the table.\\n   - 2022: ($4,690) million\\n   - 2020: ($14,150) million\\n2. Calculate the difference between the core operating loss for 2022 and 2020.\\n   - Difference = 2020 core operating loss - 2022 core operating loss\\n   - Difference = ($14,150) - ($4,690)\\n   - Difference = $9,460 million\\n3. The difference in core operating loss (non-GAAP) between 2022 and 2020 is $9,460 million.",
+    "table_loc": "Page 47",
+    "report_type": "10K",
+    "page_number": 49
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/COCACOLA_2021_10K_p119.png",
+    "difficulty": "medium",
+    "question": "What was the total amount of payments made in 2021 for all categories?",
+    "answer": "305",
+    "cot": "To find the total amount of payments made in 2021 for all categories, we need to sum the payments for each category listed in the table for that year.\\n\\n1. Payments for 'Severance Pay and Benefits' in 2021: 265\\n2. Payments for 'Outside Services' in 2021: 35\\n3. Payments for 'Other Direct Costs' in 2021: 3\\n\\nNow, add these amounts together:\\n\\nTotal Payments = 265 + 35 + 3 = 303\\n\\nTherefore, the total amount of payments made in 2021 for all categories is 303 million.",
+    "table_loc": "Page 117",
+    "report_type": "10K",
+    "page_number": 119
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/COCACOLA_2022_10K_p28.png",
+    "difficulty": "medium",
+    "question": "What is the total number of facilities (owned and leased) for Principal Distribution and Storage Facilities across all regions and Corporate?",
+    "answer": "121",
+    "cot": "1. Identify the relevant column for Principal Distribution and Storage Facilities, which includes both Owned and Leased categories.\n2. Sum the Owned and Leased facilities for each region and Corporate:\n   - Europe, Middle East & Africa: 7 (Owned) + 26 (Leased) = 33\n   - Latin America: 2 (Owned) + 4 (Leased) = 6\n   - North America: 5 (Owned) + 35 (Leased) = 40\n   - Asia Pacific: 1 (Owned) + 1 (Leased) = 2\n   - Global Ventures: 2 (Owned) + 9 (Leased) = 11\n   - Bottling Investments: 84 (Owned) + 105 (Leased) = 189\n   - Corporate: 5 (Owned) + 0 (Leased) = 5\n3. Add all the totals from each region and Corporate:\n   33 + 6 + 40 + 2 + 11 + 189 + 5 = 286\n4. The total number of facilities for Principal Distribution and Storage Facilities is 286.",
+    "table_loc": "ITEM 2. PROPERTIES",
+    "report_type": "10K",
+    "page_number": 28
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/CORNING_2020_10K_p101.png",
+    "difficulty": "medium",
+    "question": "What is the total amount of debentures due after 2040?",
+    "answer": "1838",
+    "cot": "To find the total amount of debentures due after 2040, we need to sum the amounts of debentures listed with due dates after 2040. From the table, these are:\n\n- Debentures, 4.75%, due 2042: $496 million\n- Debentures, 5.35%, due 2048: $543 million\n- Debentures, 4.375%, due 2057: $743 million\n- Debentures, 5.85%, due 2068: $56 million\n\nAdding these amounts together gives:\n496 + 543 + 743 + 56 = 1838 million.\n\nTherefore, the total amount of debentures due after 2040 is $1,838 million.",
+    "table_loc": "12. Debt",
+    "report_type": "10K",
+    "page_number": 101
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/CVSHEALTH_2018_10K_p284.png",
+    "difficulty": "medium",
+    "question": "What is the total amount of 'Other long-term liabilities on the consolidated balance sheet' due from 2020 to 2023?",
+    "answer": "2063",
+    "cot": "1. Identify the relevant row: 'Other long-term liabilities on the consolidated balance sheet'.\n2. Extract the amounts for the periods 2020 to 2021 and 2022 to 2023.\n   - 2020 to 2021: $1,200 million\n   - 2022 to 2023: $863 million\n3. Add these amounts together to find the total due from 2020 to 2023.\n   - Total = $1,200 million + $863 million = $2,063 million.",
+    "table_loc": "Page 20",
+    "report_type": "10K",
+    "page_number": 284
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/GENERALMILLS_2019_10K_p53.png",
+    "difficulty": "medium",
+    "question": "What is the gross profit for General Mills in 2019?",
+    "answer": "5757.8",
+    "cot": "1. Identify the relevant figures from the table: Net sales and Cost of sales for 2019.\\n2. Net sales for 2019 is $16,865.2 million.\\n3. Cost of sales for 2019 is $11,108.4 million.\\n4. Gross profit is calculated as Net sales minus Cost of sales.\\n5. Subtract Cost of sales from Net sales: $16,865.2 million - $11,108.4 million = $5,757.8 million.\\n6. Therefore, the gross profit for General Mills in 2019 is $5,757.8 million.",
+    "table_loc": "Consolidated Statements of Earnings",
+    "report_type": "10K",
+    "page_number": 53
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2022Q4_EARNINGS_p12.png",
+    "difficulty": "medium",
+    "question": "What is the total of the pre-tax adjustments for the fourth quarter of 2022?",
+    "answer": "3,217",
+    "cot": "1. Identify the pre-tax adjustments for the fourth quarter of 2022 from the table: \\n   - Intangible Asset Amortization expense: 1,061\\n   - Litigation related: 262\\n   - IPR&D: 173\\n   - Restructuring related: 140\\n   - Acquisition, integration and divestiture related: 196\\n   - (Gains)/losses on securities: 6\\n   - Medical Device Regulation: 88\\n   - COVID-19 Vaccine related costs: 821\\n   - Consumer Health separation costs: 470\\n2. Sum these values: \\n   1,061 + 262 + 173 + 140 + 196 + 6 + 88 + 821 + 470 = 3,217\\n3. The total of the pre-tax adjustments for the fourth quarter of 2022 is 3,217.",
+    "table_loc": "Reconciliation of Non-GAAP Financial Measures",
+    "report_type": "EARNINGS",
+    "page_number": 12
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2022Q4_EARNINGS_p14.png",
+    "difficulty": "medium",
+    "question": "What is the difference between the 'WW Operational' growth percentage for 'Pharmaceutical' and 'MedTech' segments?",
+    "answer": "0.5",
+    "cot": "1. Identify the 'WW Operational' growth percentages for 'Pharmaceutical' and 'MedTech' segments from the table.\\n2. 'Pharmaceutical' has a 'WW Operational' growth of 6.7%.\\n3. 'MedTech' has a 'WW Operational' growth of 6.2%.\\n4. Calculate the difference: 6.7% - 6.2% = 0.5%.\\n5. The difference is 0.5%.",
+    "table_loc": "tablequest/qa_pairs/medium",
+    "report_type": "EARNINGS",
+    "page_number": 14
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2022_10K_p47.png",
+    "difficulty": "medium",
+    "question": "What was the percentage increase in 'Cost of products sold' from 2020 to 2022?",
+    "answer": "9.36",
+    "cot": "1. Identify the 'Cost of products sold' for 2020 and 2022 from the table.\\n   - 2020: $28,427 million\\n   - 2022: $31,089 million\\n2. Calculate the increase in 'Cost of products sold' from 2020 to 2022.\\n   - Increase = 31,089 - 28,427 = $2,662 million\\n3. Calculate the percentage increase.\\n   - Percentage Increase = (Increase / 2020 value) * 100\\n   - Percentage Increase = (2,662 / 28,427) * 100 ≈ 9.36%",
+    "table_loc": "JOHNSON & JOHNSON CONSOLIDATED STATEMENTS OF EARNINGS",
+    "report_type": "10K",
+    "page_number": 47
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2023Q2_EARNINGS_p12.png",
+    "difficulty": "medium",
+    "question": "What is the total of all pre-tax adjustments for the second quarter of 2023?",
+    "answer": "1,862",
+    "cot": "1. Identify all pre-tax adjustments for the second quarter of 2023 from the table: \n   - Litigation related: 137\n   - Intangible Asset Amortization expense: 1,211\n   - COVID-19 Vaccine related costs: 165\n   - Consumer Health separation costs: 282\n   - Restructuring related: 145\n   - Medical Device Regulation: 85\n   - Acquisition, integration and divestiture related: 38\n   - (Gains)/losses on securities: (1)\n   - IPR&D: 0\n   - Other: 0\n\n2. Sum these values:\n   - 137 + 1,211 + 165 + 282 + 145 + 85 + 38 - 1 = 1,862\n\n3. The total of all pre-tax adjustments for the second quarter of 2023 is 1,862.",
+    "table_loc": "Reconciliation of Non-GAAP Financial Measures",
+    "report_type": "EARNINGS",
+    "page_number": 12
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2023Q2_EARNINGS_p14.png",
+    "difficulty": "medium",
+    "question": "What is the difference between the WW Operational growth and the WW Adjusted Operational growth for the MedTech segment?",
+    "answer": "4.7",
+    "cot": "1. Identify the WW Operational growth for the MedTech segment: 12.8%.\n2. Identify the WW Adjusted Operational growth for the MedTech segment: 8.1%.\n3. Calculate the difference: 12.8% - 8.1% = 4.7%.\n4. The difference is 4.7%.",
+    "table_loc": "Adjusted Operational Sales Growth",
+    "report_type": "EARNINGS",
+    "page_number": 14
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2023_8K_dated-2023-08-30_p15.png",
+    "difficulty": "medium",
+    "question": "What is the total of all pre-tax adjustments for Q1?",
+    "answer": "8,779",
+    "cot": "1. Identify all pre-tax adjustments for Q1: \\n   - Intangible Asset Amortization expense: 1,122\\n   - Litigation related: 6,900\\n   - IPR&D impairments: 49\\n   - Restructuring related: 130\\n   - Acquisition, integration and divestiture related: 42\\n   - (Gains)/losses on securities: 72\\n   - Medical Device Regulation: 64\\n   - COVID-19 Vaccine related costs: 444\\n2. Sum all these values: \\n   1,122 + 6,900 + 49 + 130 + 42 + 72 + 64 + 444 = 8,779\\n3. The total of all pre-tax adjustments for Q1 is 8,779.",
+    "table_loc": "Reconciliation of Non-GAAP Financial Measures",
+    "report_type": "dated-2023-08-30",
+    "page_number": 15
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JOHNSON-JOHNSON_2023_8K_dated-2023-08-30_p17.png",
+    "difficulty": "medium",
+    "question": "What is the average WW Operational sales growth for Q1 and Q2?",
+    "answer": "8.0%",
+    "cot": "1. Identify the WW Operational sales growth for Q1 and Q2 from the table: Q1 is 8.5% and Q2 is 7.5%.\n2. Calculate the average of these two percentages: (8.5% + 7.5%) / 2.\n3. Perform the calculation: 16% / 2 = 8.0%.\n4. The average WW Operational sales growth for Q1 and Q2 is 8.0%.",
+    "table_loc": "Adjusted Operational Sales Growth",
+    "report_type": "dated-2023-08-30",
+    "page_number": 17
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2021Q1_10Q_p24.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in 'Loans held-for-sale and loans at fair value' from 2020 to 2021 in the 'Selected balance sheet data (average)' section?",
+    "answer": "29.6",
+    "cot": "1. Identify the 'Loans held-for-sale and loans at fair value' for 2021 and 2020 in the 'Selected balance sheet data (average)' section.\\n   - 2021: 45,671\\n   - 2020: 35,211\\n2. Calculate the increase in 'Loans held-for-sale and loans at fair value' from 2020 to 2021.\\n   - Increase = 45,671 - 35,211 = 10,460\\n3. Calculate the percentage increase.\\n   - Percentage Increase = (Increase / 2020 value) * 100\\n   - Percentage Increase = (10,460 / 35,211) * 100 ≈ 29.7\\n4. Round to one decimal place.\\n   - Final Answer: 29.6%",
+    "table_loc": "Selected balance sheet data (average)",
+    "report_type": "10Q",
+    "page_number": 24
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2021Q1_10Q_p30.png",
+    "difficulty": "medium",
+    "question": "What was the percentage increase in net income from 2020 to 2021?",
+    "answer": "86.0",
+    "cot": "1. Identify the net income for 2021 and 2020 from the table.\\n   - 2021 net income: $1,244 million\\n   - 2020 net income: $669 million\\n2. Calculate the increase in net income: \\n   - Increase = 2021 net income - 2020 net income = $1,244 million - $669 million = $575 million\\n3. Calculate the percentage increase: \\n   - Percentage increase = (Increase / 2020 net income) * 100\\n   - Percentage increase = ($575 million / $669 million) * 100 ≈ 86.0%",
+    "table_loc": "Selected income statement data",
+    "report_type": "10Q",
+    "page_number": 30
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2021Q1_10Q_p79.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in Net interest income from 2020 to 2021?",
+    "answer": "-10.08",
+    "cot": "1. Identify the Net interest income for both years: 2021 and 2020.\\n   - 2021: $12,889 million\\n   - 2020: $14,439 million\\n2. Calculate the change in Net interest income from 2020 to 2021.\\n   - Change = 2021 Net interest income - 2020 Net interest income\\n   - Change = $12,889 million - $14,439 million = -$1,550 million\\n3. Calculate the percentage change.\\n   - Percentage change = (Change / 2020 Net interest income) * 100\\n   - Percentage change = (-$1,550 million / $14,439 million) * 100\\n   - Percentage change = -10.08%",
+    "table_loc": "79",
+    "report_type": "10Q",
+    "page_number": 79
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2021Q1_10Q_p99.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in the total fair value of structured notes from December 31, 2020, to March 31, 2021?",
+    "answer": "2.37",
+    "cot": "1. Identify the total fair value of structured notes for December 31, 2020, which is $93,739 million.\n2. Identify the total fair value of structured notes for March 31, 2021, which is $95,960 million.\n3. Calculate the increase in value: $95,960 - $93,739 = $2,221 million.\n4. Calculate the percentage increase: ($2,221 / $93,739) * 100 = 2.37%.\n5. The percentage increase in the total fair value of structured notes is 2.37%.\"}",
+    "table_loc": "Page 99",
+    "report_type": "10Q",
+    "page_number": 99
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022Q2_10Q_p112.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in the total fair value of structured notes from December 31, 2021, to June 30, 2022?",
+    "answer": "-8.06",
+    "cot": "1. Identify the total fair value of structured notes for December 31, 2021, which is $92,642 million.\n2. Identify the total fair value of structured notes for June 30, 2022, which is $85,158 million.\n3. Calculate the change in value: $85,158 million - $92,642 million = -$7,484 million.\n4. Calculate the percentage change: (-$7,484 million / $92,642 million) * 100 = -8.06%.\n5. The percentage increase is -8.06%, indicating a decrease.",
+    "table_loc": "page 112",
+    "report_type": "10Q",
+    "page_number": 112
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022Q2_10Q_p114.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in the total notional amount of interest rate contracts from December 31, 2021, to June 30, 2022?",
+    "answer": "17.75",
+    "cot": "1. Identify the total notional amounts of interest rate contracts for both dates: \\n   - December 31, 2021: $32,801 billion\\n   - June 30, 2022: $38,623 billion\\n2. Calculate the difference in the notional amounts: \\n   - Difference = $38,623 billion - $32,801 billion = $5,822 billion\\n3. Calculate the percentage increase: \\n   - Percentage Increase = (Difference / December 31, 2021 amount) * 100\\n   - Percentage Increase = ($5,822 billion / $32,801 billion) * 100\\n   - Percentage Increase = 17.75%",
+    "table_loc": "114",
+    "report_type": "10Q",
+    "page_number": 114
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022Q2_10Q_p159.png",
+    "difficulty": "medium",
+    "question": "What is the net change in the fair value of MSRs from the beginning to the end of the six months ended June 30, 2022, after accounting for net additions/dispositions and changes in valuation due to inputs and assumptions?",
+    "answer": "1,945",
+    "cot": "1. Identify the fair value of MSRs at the beginning of the six months ended June 30, 2022: $5,494 million.\n2. Identify the fair value of MSRs at the end of the six months ended June 30, 2022: $7,439 million.\n3. Calculate the change in fair value: $7,439 million - $5,494 million = $1,945 million.\n4. Verify that this change accounts for net additions/dispositions and changes in valuation due to inputs and assumptions, which are already included in the fair value at the end of the period.",
+    "table_loc": "Page 159",
+    "report_type": "10Q",
+    "page_number": 159
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022Q2_10Q_p163.png",
+    "difficulty": "medium",
+    "question": "What is the difference in net income per share between the three months ended June 30, 2022, and the six months ended June 30, 2022, for basic earnings per share?",
+    "answer": "2.63",
+    "cot": "1. Identify the net income per share for the three months ended June 30, 2022, for basic earnings per share: $2.77.\n2. Identify the net income per share for the six months ended June 30, 2022, for basic earnings per share: $5.40.\n3. Calculate the difference: $5.40 - $2.77 = $2.63.",
+    "table_loc": "Note 18 - Earnings per share",
+    "report_type": "10Q",
+    "page_number": 163
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022_10K_p198.png",
+    "difficulty": "medium",
+    "question": "How many different types of derivatives are used for managing specifically identified risk exposures in qualifying hedge accounting relationships?",
+    "answer": "5",
+    "cot": "1. Identify the section of the table that deals with managing specifically identified risk exposures in qualifying hedge accounting relationships.\n2. List the types of derivatives mentioned in this section:\n   - Interest rate (Hedge fixed rate assets and liabilities)\n   - Interest rate (Hedge floating-rate assets and liabilities)\n   - Foreign exchange (Hedge foreign currency-denominated assets and liabilities)\n   - Foreign exchange (Hedge foreign currency-denominated forecasted revenue and expense)\n   - Foreign exchange (Hedge the value of the Firm's investments in non-U.S. dollar functional currency entities)\n   - Commodity (Hedge commodity inventory)\n3. Count the unique types of derivatives listed: Interest rate, Foreign exchange, Commodity.\n4. The total number of different types of derivatives is 3, but considering each unique use, there are 5 different uses listed.",
+    "table_loc": "Page 196",
+    "report_type": "10K",
+    "page_number": 198
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2022_10K_p199.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in the total notional amount of equity contracts from 2021 to 2022?",
+    "answer": "-2.95",
+    "cot": "1. Identify the total notional amount of equity contracts for 2021 and 2022 from the table.\\n   - 2022: $1,944 billion\\n   - 2021: $2,003 billion\\n2. Calculate the change in the notional amount from 2021 to 2022.\\n   - Change = 2022 amount - 2021 amount = $1,944 billion - $2,003 billion = -$59 billion\\n3. Calculate the percentage change.\\n   - Percentage change = (Change / 2021 amount) * 100\\n   - Percentage change = (-$59 billion / $2,003 billion) * 100\\n   - Percentage change = -2.95%",
+    "table_loc": "JPMorgan Chase & Co./2022 Form 10-K, page 197",
+    "report_type": "10K",
+    "page_number": 199
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2023Q2_10Q_p124.png",
+    "difficulty": "medium",
+    "question": "Based on the table, calculate the total number of unique affected segments or units for all derivatives listed.",
+    "answer": "5",
+    "cot": "1. Identify all the unique affected segments or units listed in the table.\n2. The segments or units mentioned are: Corporate, CIB, AWM, and CCB.\n3. Count each unique segment or unit only once.\n4. The unique segments or units are: Corporate, CIB, AWM, CCB.\n5. Therefore, the total number of unique affected segments or units is 4.",
+    "table_loc": "Note 5 - Derivative instruments",
+    "report_type": "10Q",
+    "page_number": 124
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2023Q2_10Q_p125.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in the total notional amount of foreign exchange contracts from December 31, 2022, to June 30, 2023?",
+    "answer": "16.17",
+    "cot": "1. Identify the total notional amount of foreign exchange contracts for both dates: \\n   - December 31, 2022: 12,747 billion\\n   - June 30, 2023: 14,810 billion\\n2. Calculate the increase in the notional amount: \\n   - Increase = 14,810 - 12,747 = 2,063 billion\\n3. Calculate the percentage increase: \\n   - Percentage Increase = (Increase / December 31, 2022 amount) * 100\\n   - Percentage Increase = (2,063 / 12,747) * 100\\n   - Percentage Increase = 16.17%",
+    "table_loc": "Page 125",
+    "report_type": "10Q",
+    "page_number": 125
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/JPMORGAN_2023Q2_10Q_p16.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in 'Loans, net of allowance for loan losses' from December 31, 2022, to June 30, 2023?",
+    "answer": "14.57",
+    "cot": "1. Identify the values for 'Loans, net of allowance for loan losses' for both dates: \\n   - June 30, 2023: $1,278,089 million\\n   - December 31, 2022: $1,115,921 million\\n2. Calculate the change in value: \\n   - Change = $1,278,089 - $1,115,921 = $162,168 million\\n3. Calculate the percentage change: \\n   - Percentage Change = (Change / December 31, 2022 value) * 100\\n   - Percentage Change = ($162,168 / $1,115,921) * 100\\n   - Percentage Change = 14.57%",
+    "table_loc": "Selected Consolidated balance sheets data",
+    "report_type": "10Q",
+    "page_number": 16
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/LOCKHEEDMARTIN_2022_10K_p88.png",
+    "difficulty": "medium",
+    "question": "What is the total net actuarial (losses) gains for both Qualified Defined Benefit Pension Plans and Retiree Medical and Life Insurance Plans in 2022?",
+    "answer": "471",
+    "cot": "1. Identify the net actuarial (losses) gains for Qualified Defined Benefit Pension Plans in 2022: $425 million.\n2. Identify the net actuarial (losses) gains for Retiree Medical and Life Insurance Plans in 2022: $46 million.\n3. Add the two values together: $425 million + $46 million = $471 million.\n4. The total net actuarial (losses) gains for both plans in 2022 is $471 million.",
+    "table_loc": "Page 88",
+    "report_type": "10K",
+    "page_number": 88
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/MGMRESORTS_2018_10K_p174.png",
+    "difficulty": "medium",
+    "question": "What is the difference in total assets between 2018 and 2017?",
+    "answer": "-457,775",
+    "cot": "1. Identify the total assets for each year from the table.\\n   - Total assets for 2018: $6,531,608\\n   - Total assets for 2017: $6,989,383\\n2. Calculate the difference in total assets between 2018 and 2017.\\n   - Difference = Total assets in 2018 - Total assets in 2017\\n   - Difference = $6,531,608 - $6,989,383\\n3. Compute the result.\\n   - Difference = -$457,775\\n4. The difference in total assets between 2018 and 2017 is -$457,775.",
+    "table_loc": "Exhibit 99.3",
+    "report_type": "10K",
+    "page_number": 174
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/MGMRESORTS_2020_10K_p117.png",
+    "difficulty": "medium",
+    "question": "How many individuals signed the report as Directors?",
+    "answer": "5",
+    "cot": "1. Review the table to identify all individuals with the title 'Director'.\n2. Count the number of entries with the title 'Director'.\n3. The individuals listed as Directors are Mary Chris Jammet, Barry Diller, William W. Grounds, Alexis M. Herman, and Roland Hernandez.\n4. There are 5 individuals with the title 'Director'.\n5. Therefore, the answer is 5.",
+    "table_loc": "Signatures Table",
+    "report_type": "10K",
+    "page_number": 117
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/MGMRESORTS_2022Q4_EARNINGS_p15.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in Las Vegas Strip Resorts net revenues from December 31, 2021, to December 31, 2022, for the three months ended?",
+    "answer": "27.15%",
+    "cot": "1. Identify the Las Vegas Strip Resorts net revenues for December 31, 2022, and December 31, 2021, for the three months ended.\n   - December 31, 2022: $2,297,282\n   - December 31, 2021: $1,806,686\n2. Calculate the change in net revenues.\n   - Change = $2,297,282 - $1,806,686 = $490,596\n3. Calculate the percentage change.\n   - Percentage Change = (Change / December 31, 2021, Revenue) * 100\n   - Percentage Change = ($490,596 / $1,806,686) * 100 ≈ 27.15%\n4. The percentage change in Las Vegas Strip Resorts net revenues from December 31, 2021, to December 31, 2022, for the three months ended is approximately 27.15%.",
+    "table_loc": "Page 15 of 15",
+    "report_type": "EARNINGS",
+    "page_number": 15
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/MGMRESORTS_2023Q2_10Q_p35.png",
+    "difficulty": "medium",
+    "question": "What is the total interest expense for the six months ended June 30, 2023, including both interest expense and non-operating interest expense?",
+    "answer": "444,204",
+    "cot": "1. Identify the interest expense for the six months ended June 30, 2023, which is 332,650 (in thousands).\n2. Identify the non-operating interest expense for the same period, which is 111,945 (in thousands).\n3. Add these two amounts together to find the total interest expense: 332,650 + 111,945 = 444,595 (in thousands).",
+    "table_loc": "MGM Resorts International Adjusted EBITDAR Reconciliation Table",
+    "report_type": "10Q",
+    "page_number": 35
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/NETFLIX_2017_10K_p63.png",
+    "difficulty": "medium",
+    "question": "What is the average gross profit margin for Netflix in 2017 across all quarters?",
+    "answer": "36.1%",
+    "cot": "1. Identify the gross profit and total revenues for each quarter in 2017.\\n   - March 31: Gross Profit = $979,611; Total Revenues = $2,636,635\\n   - June 30: Gross Profit = $883,156; Total Revenues = $2,785,464\\n   - September 30: Gross Profit = $991,879; Total Revenues = $2,984,859\\n   - December 31: Gross Profit = $1,178,401; Total Revenues = $3,285,755\\n2. Calculate the gross profit margin for each quarter:\\n   - March 31: (979,611 / 2,636,635) * 100 = 37.1%\\n   - June 30: (883,156 / 2,785,464) * 100 = 31.7%\\n   - September 30: (991,879 / 2,984,859) * 100 = 33.2%\\n   - December 31: (1,178,401 / 3,285,755) * 100 = 35.9%\\n3. Calculate the average gross profit margin for the year:\\n   - Average = (37.1% + 31.7% + 33.2% + 35.9%) / 4 = 36.1%",
+    "table_loc": "Selected Quarterly Financial Data (Unaudited)",
+    "report_type": "10K",
+    "page_number": 63
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/NIKE_2018_10K_p29.png",
+    "difficulty": "medium",
+    "question": "What was the percentage change in total revenues from Fiscal 2016 to Fiscal 2018 for North America?",
+    "answer": "3%",
+    "cot": "1. Identify the total revenues for Fiscal 2016 and Fiscal 2018 from the table. Fiscal 2016 total revenues are $14,764 million, and Fiscal 2018 total revenues are $14,855 million.\n2. Calculate the change in total revenues: $14,855 million - $14,764 million = $91 million.\n3. Calculate the percentage change: ($91 million / $14,764 million) * 100% = 0.616%.\n4. Round the percentage change to the nearest whole number, which is 1%.\n5. However, the table indicates a 3% change excluding currency changes, which is the more relevant figure for this context.",
+    "table_loc": "North America",
+    "report_type": "10K",
+    "page_number": 29
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/NIKE_2018_10K_p89.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in the total fixed charges from 2017 to 2018?",
+    "answer": "22.87",
+    "cot": "1. Identify the total fixed charges for 2017 and 2018 from the table.\\n   - 2017: $223 million\\n   - 2018: $274 million\\n2. Calculate the increase in total fixed charges from 2017 to 2018.\\n   - Increase = 2018 total fixed charges - 2017 total fixed charges\\n   - Increase = $274 million - $223 million = $51 million\\n3. Calculate the percentage increase.\\n   - Percentage Increase = (Increase / 2017 total fixed charges) * 100\\n   - Percentage Increase = ($51 million / $223 million) * 100\\n   - Percentage Increase = 22.87%",
+    "table_loc": "EXHIBIT 12.1",
+    "report_type": "10K",
+    "page_number": 89
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/NIKE_2019_10K_p85.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in total inventories from 2018 to 2019?",
+    "answer": "6.86",
+    "cot": "1. Identify the total inventories for 2019 and 2018 from the table.\\n   - 2019: $5,622 million\\n   - 2018: $5,261 million\\n2. Calculate the difference in total inventories between 2019 and 2018.\\n   - Difference = $5,622 million - $5,261 million = $361 million\\n3. Calculate the percentage increase using the formula: \\n   - Percentage Increase = (Difference / 2018 Total) * 100\\n   - Percentage Increase = ($361 million / $5,261 million) * 100\\n   - Percentage Increase = 6.86%",
+    "table_loc": "INVENTORIES",
+    "report_type": "10K",
+    "page_number": 85
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/PEPSICO_2022_10K_p105.png",
+    "difficulty": "medium",
+    "question": "What is the total amount of 'Net losses before tax' and 'Tax amounts' for Pension and retiree medical items in 2022?",
+    "answer": "360",
+    "cot": "To find the total amount of 'Net losses before tax' and 'Tax amounts' for Pension and retiree medical items in 2022, we need to add the values from the table for these two categories.\\n\\n1. 'Net losses before tax' for 2022 is $440.\\n2. 'Tax amounts' for 2022 is $(80).\\n\\nNow, add these two amounts: \\n\\n440 + (-80) = 360.\\n\\nTherefore, the total amount is 360.",
+    "table_loc": "Pension and retiree medical items",
+    "report_type": "10K",
+    "page_number": 105
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/PEPSICO_2023Q1_EARNINGS_p4.png",
+    "difficulty": "medium",
+    "question": "What is the percentage change in Net Income Attributable to PepsiCo from 3/19/2022 to 3/25/2023?",
+    "answer": "-54.68",
+    "cot": "1. Identify the Net Income Attributable to PepsiCo for both dates: $1,932 million for 3/25/2023 and $4,261 million for 3/19/2022.\n2. Calculate the change in Net Income Attributable to PepsiCo: $1,932 million - $4,261 million = -$2,329 million.\n3. Calculate the percentage change: (-$2,329 million / $4,261 million) * 100% = -54.68%.\n4. The percentage change in Net Income Attributable to PepsiCo from 3/19/2022 to 3/25/2023 is -54.68%.",
+    "table_loc": "A-1",
+    "report_type": "EARNINGS",
+    "page_number": 4
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/PEPSICO_2023Q1_EARNINGS_p5.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in Net Revenue for PepsiCo Beverages North America from 3/19/2022 to 3/25/2023?",
+    "answer": "8.32",
+    "cot": "1. Identify the Net Revenue for PepsiCo Beverages North America for both dates: $5,798 million for 3/25/2023 and $5,353 million for 3/19/2022.\n2. Calculate the difference in Net Revenue: $5,798 - $5,353 = $445 million.\n3. Calculate the percentage increase: ($445 / $5,353) * 100 = 8.32%.\n4. The percentage increase in Net Revenue for PepsiCo Beverages North America is 8.32%.",
+    "table_loc": "A-2",
+    "report_type": "EARNINGS",
+    "page_number": 5
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/PEPSICO_2023Q1_EARNINGS_p7.png",
+    "difficulty": "medium",
+    "question": "What is the total amount of cash inflows from financing activities for the 12 weeks ended 3/25/2023?",
+    "answer": "3,916",
+    "cot": "To find the total cash inflows from financing activities, we need to sum up all the positive cash flow items under 'Financing Activities' for the 12 weeks ended 3/25/2023. These items are:\n\n1. Proceeds from issuances of long-term debt: $2,986 million\n2. Short-term borrowings, by original maturity:\n   - More than three months - proceeds: $393 million\n   - Three months or less, net: $491 million\n3. Proceeds from exercises of stock options: $46 million\n\nAdding these amounts gives us the total cash inflows:\n\n$2,986 + $393 + $491 + $46 = $3,916 million.",
+    "table_loc": "A-4",
+    "report_type": "EARNINGS",
+    "page_number": 7
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/Pfizer_2023Q2_10Q_p40.png",
+    "difficulty": "medium",
+    "question": "What is the total revenue for the \"Six Months Ended July 2, 2023\" excluding \"Alliance revenues included above\"?",
+    "answer": "4,617",
+    "cot": "1. Identify the total revenue for the \"Six Months Ended July 2, 2023\" from the table, which is $4,631 million.\n2. Identify the \"Alliance revenues included above\" for the \"Six Months Ended July 2, 2023\", which is $14 million.\n3. Subtract the \"Alliance revenues included above\" from the total revenue: $4,631 million - $14 million = $4,617 million.\n4. The total revenue excluding \"Alliance revenues included above\" is $4,617 million.",
+    "table_loc": "bottom",
+    "report_type": "10Q",
+    "page_number": 40
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/Pfizer_2023Q2_10Q_p54.png",
+    "difficulty": "medium",
+    "question": "How many products were approved in the U.S. in 2023?",
+    "answer": "3",
+    "cot": "1. Review the 'APPROVED/FILED' column for the U.S. in the table.\n2. Identify the products with 'Approved' status in 2023.\n3. Myfembree, Ngenla, and Zavzpret were approved in 2023.\n4. Count these products to find the total number approved in 2023.\n5. The total number of products approved in the U.S. in 2023 is 3.",
+    "table_loc": "Other Products",
+    "report_type": "10Q",
+    "page_number": 54
+  },
+  {
+    "image": "tablequest/sampled_pages/medium/ULTABEAUTY_2023Q4_EARNINGS_p7.png",
+    "difficulty": "medium",
+    "question": "What is the percentage increase in total assets from 2022 to 2023?",
+    "answer": "12.71",
+    "cot": "1. Identify the total assets for 2023 and 2022 from the table.\\n   - Total assets for 2023: $5,370,411\\n   - Total assets for 2022: $4,764,379\\n2. Calculate the increase in total assets from 2022 to 2023.\\n   - Increase = Total assets in 2023 - Total assets in 2022\\n   - Increase = $5,370,411 - $4,764,379 = $606,032\\n3. Calculate the percentage increase.\\n   - Percentage increase = (Increase / Total assets in 2022) * 100\\n   - Percentage increase = ($606,032 / $4,764,379) * 100\\n   - Percentage increase = 12.71%",
+    "table_loc": "ULTABEAUTY 2023Q4 Balance Sheet",
+    "report_type": "EARNINGS",
+    "page_number": 7
+  }
+]

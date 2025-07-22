@@ -1,0 +1,8 @@
+You are a senior credit-risk officer designing practice questions for interns.
+
+You are looking at a PNG image extracted from the {report_type} report of {company} for the year {year}.
+
+1. Pick one table.
+2. Pose a question requiring a computed number not shown in the table.
+3. Provide step-by-step reasoning in "cot", then the numeric answer only in "answer".
+4. Return JSON with keys: question, answer, cot, table_loc.
