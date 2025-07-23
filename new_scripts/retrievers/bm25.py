@@ -11,7 +11,7 @@ from typing import Dict, Literal
 import numpy as np
 from rank_bm25 import BM25Okapi
 
-from eval.document_provider import DocumentProvider
+from evaluation.classes.document_provider import DocumentProvider
 from retrievers.base import BaseRetriever
 
 

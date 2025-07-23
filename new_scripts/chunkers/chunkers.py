@@ -201,27 +201,6 @@ def neural_chunker(text, tokenizer='gpt2', chunk_size=512, chunk_overlap=0, min_
   
     return chunks
 
-# def word_chunker(document, tokenizer='gpt2', mode='advanced', chunk_size=512, chunk_overlap=0):
-#     """
-#     mode: chunking mode
-#         simple: basic space-based splitting
-#         advanced: handles punctuation and special cases
-#     """
-#     tokenizer = AutoTikTokenizer.from_pretrained(tokenizer_name_or_path=tokenizer)
-    
-#     chunker = WordChunker(
-#         tokenizer=tokenizer,
-#         chunk_size=chunk_size,
-#         chunk_overlap=chunk_overlap,
-#         mode=mode
-#     )
-
-#     chonkie_chunks = chunker.chunk(document.page_content)
-#     chunks = [Document(page_content=chunk.text, metadata={'source': document.metadata['source']}) for chunk in chonkie_chunks]
-
-#     return chunks
-     
-
 
 def chunk_all_parsed_content(parsers, chunkers, input_base, output_base, chunk_size, overlap_sizes, dataset='financebench', SKIP_EXISTING=True):
     # Update paths to include dataset
@@ -336,11 +315,11 @@ def chunk_all_parsed_content(parsers, chunkers, input_base, output_base, chunk_s
 
 if __name__ == '__main__':
     # Dataset selection: 'financebench' or 'tablequest'
-    dataset = 'tablequest'  # Change to 'financebench' for the original dataset
+    dataset = 'financebench'  # Change to 'financebench' for the original dataset
     
-    parsers=['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']  # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
+    parsers=['pdfminer']  # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
     chunkers=['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] # 'token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'
-    overlap_sizes = [0, 128, 256] #, 128, 256, 512] 
+    overlap_sizes = [0] #, 128, 256, 512] 
     SKIP_EXISTING = True  # Set to False to recreate all files
 
     input_base='new_scripts/data/parsed_pages'

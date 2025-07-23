@@ -1,10 +1,9 @@
 # if tou face issues with the installation of the requirements
 # please comment 'Layout detection dependencies' -> install the rest of the requirements
 # and then uncomment the 'Layout detection dependencies' and reinstall all using: pip install -r requirements.txt
-
+torch==2.6.0
 haystack-ai==2.9.0
 ollama-haystack==2.3.0
-torch==2.6.0
 python-dotenv
 nltk 
 matplotlib
@@ -26,10 +25,10 @@ pdfminer.six==20250327
 chonkie[all]==1.0.10
 
 # Layout detection dependencies
-layoutparser
-torchvision
-opencv-python
-git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2
+# layoutparser
+# torchvision
+# opencv-python
+# git+https://github.com/facebookresearch/detectron2.git@v0.5#egg=detectron2
 
 ir_measures==0.3.7
 rank-bm25==0.2.2
@@ -37,3 +36,4 @@ faiss-cpu==1.11.0
 pylate==1.2.0
 sentence-transformers==4.0.2
 sparsembed==0.1.1
+tiktoken
