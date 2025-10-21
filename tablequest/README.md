@@ -21,20 +21,41 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 ## Directory Structure
 
 ```
-tablequest/
-├── metadata/            # Page and table metadata, sampling information
-├── prompts/             # LLM prompt templates for different difficulty levels: easy, medium and hard
-├── qa_pairs/            # JSON files with question-answer pairs for different difficulty levels
-├── sampled_pages_pdf/   # Sampled pages organized by difficulty (easy/medium/hard) saved as .pdf files
-├── scripts/             # Data processing and QA generation scripts
-└── stats/               # Statistics and analysis scripts/notebooks
+├├── tablequest/                    # TableQuest dataset
+│   ├── annotation/                # Annotation and verification scripts for QA validation
+│   │   ├── prompts/               # Prompt for automatic annotation tasks
+│   │   ├── verification_openai/   # OpenAI-based verification
+│   │   ├── analyze_vote_results.py
+│   │   ├── openai_voter.py
+│   │   └── README.md
+│   ├── metadata/                  # Page and table metadata, sampling information
+│   ├── prompts/                   # LLM prompt templates for different difficulty levels
+│   ├── qa_pairs/                  # JSON files with question-answer pairs
+│   ├── sampled_pages_pdf/         # Sampled pages organized by difficulty (PDF files)
+│   ├── scripts/                   # Data processing and QA generation scripts
+│   └── stats/                     # Statistics and analysis scripts/notebooks
+├── new_scripts/                   # Evaluation framework
+│   ├── chunkers/                  # Text chunking implementations
+│   ├── data/                      # Generated answers and intermediate files (parsing, chunking results... etc)
+│   ├── evaluation/                # Evaluation metrics and classes (retrieval and answer correctness)
+│   ├── generators/                # Answer generation modules
+│   ├── parsers/                   # PDF parsing implementations
+│   ├── preprocessing/             # Data preprocessing utilities
+│   ├── retrievers/                # Information retrieval methods (BM25, dense, hybrid, ColBert)
+│   ├── stats/                     # Stats utilities
+│   └── test/                      # End-to-end testing and evaluation
+├── requirements.txt               # Python dependencies
+└── README.md                      # This file
+
 ```
 
 ## Components
 
+- **annotation/**: Scripts and tools for QA pair validation and verification using OpenAI voting
 - **metadata/**: Contains CSV files with page metadata, sampling information, and document mappings
 - **prompts/**: LLM prompt templates organized by difficulty levels (easy, medium, hard) for question generation
 - **qa_pairs/**: JSON files containing question-answer pairs for each difficulty level
+- **sampled_pages/**: Document pages containing tables, organized by difficulty level
 - **sampled_pages_pdf/**: Document pages containing tables, organized by difficulty and saved as PDF files
-- **scripts/**: Python scripts for data processing, PDF handling, table extraction, and QA generation
+- **scripts/**: Python scripts for data processing, QA generation, and preprocessing
 - **stats/**: Analysis scripts and Jupyter notebooks for dataset statistics and evaluation

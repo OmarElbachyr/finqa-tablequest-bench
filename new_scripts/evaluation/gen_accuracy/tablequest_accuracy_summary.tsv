@@ -1,9 +1,15 @@
-dataset	parser	chunker	overlap	retriever	model	top_k	total_questions	correct_answers	accuracy	avg_confidence	avg_judgment_time
-tablequest	pdfminer	sentence	128	SpladeRetriever	llama3.2:3b	3	169	32	0.1893	0.9831	2.18
-tablequest	pdfminer	sentence	128	SpladeRetriever	gemma3:4b	1	169	35	0.2071	0.9781	2.09
-tablequest	pdfminer	sentence	128	SpladeRetriever	phi3:mini	1	169	31	0.1834	0.9719	2.14
-tablequest	pdfminer	sentence	128	SpladeRetriever	llama3.2:3b	1	169	39	0.2308	0.9731	2.29
-tablequest	pdfminer	sentence	128	SpladeRetriever	deepseek-r1:1.5b	1	169	17	0.1006	0.9586	2.43
-tablequest	pdfminer	sentence	128	SpladeRetriever	gemma3:4b	3	169	33	0.1953	0.9627	2.27
-tablequest	pdfminer	sentence	128	SpladeRetriever	phi3:mini	3	169	11	0.0651	0.9527	2.38
-tablequest	pdfminer	sentence	128	SpladeRetriever	deepseek-r1:1.5b	3	169	8	0.0473	0.9666	2.37
+dataset	parser	chunker	overlap	retriever	model	top_k	total_questions	correct_answers	accuracy	avg_confidence	avg_judgment_time	sum_generation_time	avg_generation_time
+tablequest	pdfplumber	neural	128	SpladeRetriever	deepseek-r1:1.5b	1	116	28	0.2414	0.8776	3.14	127.40407399999998	1.0983109827586206
+tablequest	pdfplumber	neural	128	SpladeRetriever	gemma3:4b	1	116	48	0.4138	0.9332	2.76	108.66821699999997	0.9367949741379308
+tablequest	pdfplumber	neural	128	SpladeRetriever	llama3.2:3b	1	116	37	0.3190	0.9142	3.03	115.54124199999998	0.9960451896551723
+tablequest	pdfplumber	neural	128	SpladeRetriever	smollm2:1.7b	1	116	7	0.0603	0.9198	2.62	63.95476600000001	0.5513341896551726
+tablequest	pdfplumber	neural	128	SpladeRetriever	deepseek-r1:1.5b	3	116	22	0.1897	0.8966	2.77	420.9358699999998	3.628757499999998
+tablequest	pdfplumber	neural	128	SpladeRetriever	gemma3:4b	3	116	49	0.4224	0.9207	2.52	213.927886	1.8442059137931035
+tablequest	pdfplumber	neural	128	SpladeRetriever	llama3.2:3b	3	116	22	0.1897	0.8935	3.05	178.3950989999999	1.5378887844827578
+tablequest	pdfplumber	neural	128	SpladeRetriever	smollm2:1.7b	3	116	7	0.0603	0.9108	3.06	251.71170899999993	2.169928525862068
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-4.1-mini	1	116	67	0.5776	0.9448	2.58	349.0402609999998	3.0089677672413777
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-5-mini	1	116	69	0.5948	0.9578	2.47	1161.7221150000005	10.014845818965522
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-4.1-mini	3	116	78	0.6724	0.9487	2.36	536.828799	4.627834474137931
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-5-mini	3	116	80	0.6897	0.9569	2.65	1516.0210509999995	13.069146991379306
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-5	1	116	68	0.5862	0.9466	2.17	1580.2359069999993	13.62272333620689
+tablequest	pdfplumber	neural	128	SpladeRetriever	gpt-5	3	116	85	0.7328	0.9517	2.21	2910.098490999999	25.087055956896542

@@ -1,0 +1,24 @@
+You are an expert financial document analyst.
+Given a PAGE from a financial report document, your task is to judge the correctness of the ANSWER provided for a QUESTION.
+The QUESTION is based on one or multiple tables in the PAGE; use the table location below to go directly to the relevant table(s).
+
+Table Location: {table_loc}
+
+Based on the QUESTION, ANSWER, and the original CHAIN OF THOUGHT (if provided), determine whether the answer is CORRECT or INCORRECT:
+
+QUESTION:
+{question}
+
+ANSWER:
+{answer}
+
+CHAIN OF THOUGHT:
+{cot}
+
+Please respond with ONLY ONE WORD:
+
+"CORRECT" if the answer is accurate and well-supported by the image
+
+"INCORRECT" if the answer contains errors, misinterpretations, or unsupported claims
+
+PAGE:
