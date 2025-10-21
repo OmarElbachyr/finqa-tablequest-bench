@@ -1,8 +1,8 @@
 #!/usr/bin/env python3
 """
-Ollama Answer Generation Script
+OpenAI Answer Generation Script
 
-Generates answers for document QA pairs using Ollama models with direct API calls.
+Generates answers for document QA pairs using OpenAI models with direct API calls.
 Uses configurable lists for parsers, chunkers, overlaps, retrievers, and models.
 """
 
@@ -12,12 +12,17 @@ import datetime
 from pathlib import Path
 from typing import List, Dict, Any
 from tqdm import tqdm
-import ollama
+
+from dotenv import load_dotenv
+from openai import OpenAI
 
 from haystack import Pipeline
 from haystack.components.builders import PromptBuilder
 
-from requests.exceptions import ReadTimeout
+
+# Load API key
+load_dotenv()
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def load_qa_pairs(csv_path: str) -> List[Dict[str, Any]]:
@@ -30,7 +35,7 @@ def load_retrieved_pages(retrieval_file_path: str) -> Dict[str, List[Dict[str, A
     """Load retrieved pages from a retrieval run file."""
     if not os.path.exists(retrieval_file_path):
         return {}
-    
+    print(f"Loading retrieved pages from {retrieval_file_path}")
     with open(retrieval_file_path, 'r') as f:
         return json.load(f)
 
@@ -39,13 +44,10 @@ def load_parsed_page_content(page_name: str, parser: str, base_dir: Path, datase
     """Load content from parsed pages directory for a specific page name (e.g., BESTBUY_2024Q2_10Q_20)."""
     parsed_pages_dir = base_dir / "data" / "parsed_pages" / dataset / parser
     
-    # Try the original format first (financebench format)
     page_file = parsed_pages_dir / f"{page_name}_{parser}.json"
     
-    # If not found, try the tablequest format with 'p' prefix
     if not page_file.exists() and dataset == "tablequest":
-        # For tablequest, convert "DOCUMENT_PAGE" to "DOCUMENT_pPAGE"
-        parts = page_name.rsplit('_', 1)  # Split on last underscore
+        parts = page_name.rsplit('_', 1)
         if len(parts) == 2:
             doc_part, page_num = parts
             page_file = parsed_pages_dir / f"{doc_part}_p{page_num}_{parser}.json"
@@ -57,7 +59,6 @@ def load_parsed_page_content(page_name: str, parser: str, base_dir: Path, datase
         with open(page_file, 'r') as f:
             data = json.load(f)
         
-        # Extract text content from the parsed page
         if isinstance(data, list) and len(data) > 0:
             return data[0].get('text', '')
         elif isinstance(data, dict):
@@ -73,7 +74,6 @@ def build_context_from_retrieved_pages(retrieved_pages: Dict[str, float], parser
     if not retrieved_pages:
         return ""
     
-    # Get top-k page names (keys) sorted by score (highest first)
     top_page_names = list(retrieved_pages.keys())[:top_k]
     
     context_parts = []
@@ -85,20 +85,19 @@ def build_context_from_retrieved_pages(retrieved_pages: Dict[str, float], parser
             context_count += 1
             context_parts.append(f"[CONTEXT {context_count}] - Source: {page_name}")
             context_parts.append(content.strip())
-            context_parts.append("")  # Add blank line between contexts
+            context_parts.append("")
     
     if context_count == 0:
         return ""
     
-    # Add a header showing total number of context documents
     header = f"Total context documents retrieved: {context_count}\n{'='*60}\n\n"
     return header + "\n".join(context_parts)
 
 
-def generate_answer_with_ollama(model: str, prompt: str, system_prompt: str = None) -> str:
-    """Generate answer using direct Ollama API."""
+def generate_answer_with_openai(model: str, prompt: str, system_prompt: str = None) -> str:
+    """Generate answer using OpenAI API."""
     try:
-        response = ollama.chat(
+        response = client.chat.completions.create(
             model=model,
             messages=[
                 {
@@ -106,16 +105,12 @@ def generate_answer_with_ollama(model: str, prompt: str, system_prompt: str = No
                     'content': system_prompt or 'You are a financial expert specializing in corporate financial reports and filings.'
                 },
                 {
-                    'role': 'user', 
+                    'role': 'user',
                     'content': prompt
                 }
             ],
-            options={
-                'temperature': 0.1,
-                'num_predict': 256  # Limit output to 256 tokens for faster generation
-            }
         )
-        return response['message']['content']
+        return response.choices[0].message.content.strip()
     except Exception as e:
         if 'timeout' in str(e).lower():
             return "timeout"
@@ -150,20 +145,18 @@ ANSWER:"""
 
 
 def generate_answer_with_pipeline(pipeline: Pipeline, question: str, context: str, model: str) -> str:
-    """Generate answer using Haystack pipeline for prompt building and direct Ollama API."""
+    """Generate answer using Haystack pipeline for prompt building and OpenAI API."""
     if not context.strip():
         return "No retrieved context available"
     
-    # Build the prompt using Haystack
     prompt_result = pipeline.get_component("prompt_builder").run(
         context=context,
         query=question
     )
     actual_prompt = prompt_result["prompt"]
     
-    # Use direct Ollama API to generate the answer
     system_prompt = 'You are a financial expert specializing in corporate financial reports and filings.'
-    generated_answer = generate_answer_with_ollama(model, actual_prompt, system_prompt)
+    generated_answer = generate_answer_with_openai(model, actual_prompt, system_prompt)
     
     return generated_answer
 
@@ -186,7 +179,6 @@ def check_paths(base_dir: Path, datasets: List[str]) -> bool:
         print(f"❌ Retrieved pages directory not found: {retrieved_pages_base}")
         return False
     
-    # Check for dataset-specific paths
     for dataset in datasets:
         if dataset == "financebench":
             csv_path = base_dir / "data" / "csv" / "document_qa_pairs.json"
@@ -204,7 +196,6 @@ def check_paths(base_dir: Path, datasets: List[str]) -> bool:
             print(f"❌ Retrieved pages dataset directory not found: {dataset_retrieved_pages}")
             return False
         
-        # Check for retriever result files in dataset
         overlap_dirs = list(dataset_retrieved_pages.glob("overlap_*"))
         if not overlap_dirs:
             print(f"❌ No overlap directories found in {dataset_retrieved_pages}")
@@ -225,34 +216,30 @@ def check_paths(base_dir: Path, datasets: List[str]) -> bool:
     
     return True
 
+
 def process_combination(parser: str, chunker: str, overlap: int, retriever: str, model: str, 
                        base_dir: Path, all_questions: List[Dict[str, Any]], top_k: int = 5, dataset: str = "financebench") -> None:
     """Process a single combination of parser, chunker, overlap, retriever, and model."""
     print(f"Processing: {parser}_{chunker} | overlap_{overlap} | {retriever} | {model} | top_k={top_k} | dataset={dataset}")
     
-    # Construct paths with dataset subfolder
     retrieved_pages_base = base_dir / "data" / "retrieved_pages" / dataset
-    output_base = base_dir / "data" / "generated_answers" / dataset
-    retrieval_file = retrieved_pages_base / f"overlap_{overlap}" / f"{parser}_{chunker}" / f"{retriever}_run_sorted.json"
+    output_base = base_dir / "data" / "generated_answers_tablequest" / dataset
+    retrieval_file = f'new_scripts/data/retrieved_pages/tablequest_auto_judged/overlap_{overlap}/{parser}_{chunker}/{retriever}_run_sorted.json'
     
-    # Check if output file already exists
     output_dir = output_base / f"overlap_{overlap}" / f"{parser}_{chunker}" / retriever
     output_file = output_dir / f"{model.replace(':', '_')}_top{top_k}_answers.json"
     if output_file.exists():
         print(f"  Skipping - output file already exists: {output_file}")
         return
     
-    # Load retrieved pages
     retrieved_data = load_retrieved_pages(str(retrieval_file))
     if not retrieved_data:
         print(f"  Skipping - no retrieved data found")
         return
     
-    # Create pipeline (for prompt building only)
     pipeline = create_generation_pipeline(model)
     print(f"  ✅ Created pipeline for model: {model}")
     
-    # Generate answers
     generated_answers = []
     for question_data in tqdm(all_questions, desc=f"  {model}"):
         question_id = question_data["question_id"]
@@ -260,20 +247,17 @@ def process_combination(parser: str, chunker: str, overlap: int, retriever: str,
         ground_truth = question_data["answer"]
         doc_name = question_data["doc_name"]
         
-        # Get retrieved pages for this question
         retrieved_pages = retrieved_data.get(question_id, {})
         
         start_gen_time = datetime.datetime.now()
         if not retrieved_pages:
             generated_answer = "No retrieved context available"
         else:
-            # Build context from top-k retrieved pages using parsed page content
             context = build_context_from_retrieved_pages(retrieved_pages, parser, base_dir, dataset, top_k)
             generated_answer = generate_answer_with_pipeline(pipeline, question, context, model)
         end_gen_time = datetime.datetime.now()
         generation_time = (end_gen_time - start_gen_time).total_seconds()
         
-        # Store result
         generated_answers.append({
             "question_id": question_id,
             "question": question,
@@ -290,7 +274,6 @@ def process_combination(parser: str, chunker: str, overlap: int, retriever: str,
             "generation_time": generation_time
         })
     
-    # Save results
     save_generated_answers(generated_answers, str(output_file))
     print(f"  ✅ Completed: {len(generated_answers)} answers generated")
 
@@ -300,9 +283,8 @@ def main(parsers: List[str], chunkers: List[str], overlaps: List[int],
     """Main processing function."""
     for dataset in datasets:
         print(f"\n=== Processing dataset: {dataset} ===")
-        # Load QA pairs
-        if dataset == "financebench":
-            csv_path = base_dir / "data" / "csv" / "document_qa_pairs.json"
+        if dataset == "financebench": 
+            csv_path = base_dir / "data" / "csv" / "document_qa_pairs.json" 
         elif dataset == "tablequest":
             csv_path = base_dir / "data" / "csv" / "tq_document_qa_pairs.json"
         else:
@@ -312,13 +294,12 @@ def main(parsers: List[str], chunkers: List[str], overlaps: List[int],
         qa_data = load_qa_pairs(str(csv_path))
         print(f"Loaded {len(qa_data)} documents with QA pairs")
         
-        # Extract all questions
         all_questions = []
-        question_counter = 1  # Start from 1 to match q1, q2, etc.
+        question_counter = 1
         for doc in qa_data:
             doc_name = doc["doc_name"]
             for qa_pair in doc["qa_pairs"]:
-                question_id = f"q{question_counter}"  # Match the format in retrieved pages
+                question_id = f"q{question_counter}"
                 all_questions.append({
                     "question_id": question_id,
                     "question": qa_pair["question"],
@@ -329,7 +310,6 @@ def main(parsers: List[str], chunkers: List[str], overlaps: List[int],
         
         print(f"Total questions to process: {len(all_questions)}")
         
-        # Calculate and process all combinations
         total_combinations = len(overlaps) * len(retrievers) * len(models) * len(parsers) * len(chunkers)
         current_combination = 0
         
@@ -351,32 +331,16 @@ if __name__ == "__main__":
     script_start = datetime.datetime.now()
     print(f"🚀 Script started at: {script_start}")
     
-    # =============================================================================
-    # CONFIGURATION - Edit these variables as needed
-    # =============================================================================
+    BASE_DIR = Path("new_scripts")
     
-    # Base directory
-    BASE_DIR = Path(".")
-    
-    # Configuration lists - edit these to change what gets processed
-    DATASETS = ["financebench", "tablequest"] # "financebench",
-    PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
-    CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
+    DATASETS = ["tablequest"] 
+    PARSERS = ['pdfplumber']
+    CHUNKERS = ['neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"]  # Add: "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"
-    MODELS = ["llama3.2:3b", "deepseek-r1:1.5b"] #,"gemma3:4b", "phi3:mini"] 
-    """
-        gemma3:4b", "phi3:mini done for k=1 and k=3
-        "llama3.2:3b", "deepseek-r1:1.5b" done top=1 and k=3
-        "qwen3:4b" too slow
-    """
-    
-    # Number of top pages to use as context
+    RETRIEVERS = ["SpladeRetriever"]  
+    MODELS = ["gpt-5"]  
+
     TOP_K = 3
-    
-    # =============================================================================
-    # END CONFIGURATION
-    # =============================================================================
     
     print(f"Configuration:")
     print(f"  Parsers: {PARSERS}")
@@ -388,20 +352,15 @@ if __name__ == "__main__":
     print(f"  Top-K pages: {TOP_K}")
     print(f"  Total combinations: {len(OVERLAPS) * len(RETRIEVERS) * len(MODELS) * len(PARSERS) * len(CHUNKERS) * len(DATASETS)}")
     
-    # Validate setup
     if not check_paths(BASE_DIR, DATASETS):
         print("❌ Setup validation failed. Please fix the issues before running.")
         exit(1)
     
     print("✅ Setup validation passed. Starting processing...")
     
-    # Run main processing
     main(PARSERS, CHUNKERS, OVERLAPS, RETRIEVERS, MODELS, BASE_DIR, TOP_K, DATASETS)
     
     script_end = datetime.datetime.now()
-    overall_duration = script_end - script_start
-    print(f"\n🎉 Script finished at: {script_end}")
-    print(f"Total execution time: {overall_duration}")
     overall_duration = script_end - script_start
     print(f"\n🎉 Script finished at: {script_end}")
     print(f"Total execution time: {overall_duration}")

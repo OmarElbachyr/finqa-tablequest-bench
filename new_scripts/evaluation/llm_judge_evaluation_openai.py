@@ -1,9 +1,9 @@
 #!/usr/bin/env python3
 """
-LLM-as-a-Judge Evaluation Script
+LLM-as-a-Judge Evaluation Script (OpenAI version with dotenv)
 
 Evaluates answer correctness for FinanceBench and TableQuest datasets using LLM-as-a-judge.
-Uses qwen2.5:14b as the judge model to assess generated answers against ground truth.
+Uses an OpenAI model (e.g., gpt-4o-mini) as the judge model to assess generated answers against ground truth.
 """
 
 import json
@@ -12,7 +12,14 @@ import datetime
 from pathlib import Path
 from typing import List, Dict, Any, Tuple
 from tqdm import tqdm
-import ollama
+from openai import OpenAI
+from dotenv import load_dotenv
+
+# Load environment variables from .env file
+load_dotenv()
+
+# Initialize OpenAI client using API key from environment
+client = OpenAI(api_key=os.getenv("OPENAI_API_KEY"))
 
 
 def load_generated_answers(file_path: str) -> List[Dict[str, Any]]:
@@ -24,13 +31,12 @@ def load_generated_answers(file_path: str) -> List[Dict[str, Any]]:
         return json.load(f)
 
 
-def judge_answer_with_ollama(judge_model: str, question: str, ground_truth: str, generated_answer: str, dataset: str) -> Tuple[str, float, str]:
+def judge_answer_with_openai(judge_model: str, question: str, ground_truth: str, generated_answer: str, dataset: str) -> Tuple[str, float, str]:
     """
     Use LLM-as-a-judge to evaluate answer correctness.
     Returns: (judgment, confidence_score, reasoning)
     """
     
-    # Simplified unified prompt for both datasets
     system_prompt = """You are an expert judge tasked with evaluating answer correctness. Determine if the generated answer is correct compared to the ground truth answer."""
 
     prompt_template = """
@@ -55,28 +61,18 @@ REASONING: [Brief explanation of your decision]
     )
     
     try:
-        response = ollama.chat(
+        response = client.chat.completions.create(
             model=judge_model,
             messages=[
-                {
-                    'role': 'system',
-                    'content': system_prompt
-                },
-                {
-                    'role': 'user',
-                    'content': formatted_prompt
-                }
+                {"role": "system", "content": system_prompt},
+                {"role": "user", "content": formatted_prompt}
             ],
-            options={
-                'temperature': 0.1,
-                'num_predict': 512
-            }
         )
         
-        response_text = response['message']['content']
+        response_text = response.choices[0].message.content
         
-        # Parse the response
-        judgment = "INCORRECT"  # Default
+        # Default values
+        judgment = "INCORRECT"
         confidence = 0.0
         reasoning = "Failed to parse response"
         
@@ -92,7 +88,7 @@ REASONING: [Brief explanation of your decision]
             elif line.startswith('CONFIDENCE:'):
                 try:
                     confidence = float(line.replace('CONFIDENCE:', '').strip())
-                    confidence = max(0.0, min(1.0, confidence))  # Clamp to [0,1]
+                    confidence = max(0.0, min(1.0, confidence))
                 except:
                     confidence = 0.0
             elif line.startswith('REASONING:'):
@@ -116,13 +112,12 @@ def evaluate_generated_answers(answers: List[Dict[str, Any]], judge_model: str, 
         generated_answer = answer_data["generated_answer"]
         
         start_time = datetime.datetime.now()
-        judgment, confidence, reasoning = judge_answer_with_ollama(
+        judgment, confidence, reasoning = judge_answer_with_openai(
             judge_model, question, ground_truth, generated_answer, dataset
         )
         end_time = datetime.datetime.now()
         judgment_time = (end_time - start_time).total_seconds()
         
-        # Copy original data and add judgment results
         evaluated_data = answer_data.copy()
         evaluated_data.update({
             "judgment": judgment,
@@ -149,14 +144,19 @@ def calculate_accuracy_metrics(evaluated_answers: List[Dict[str, Any]]) -> Dict[
     
     accuracy = correct_answers / total_questions if total_questions > 0 else 0.0
     
-    # Calculate average confidence
+    # Average confidence
     confidences = [ans.get("judgment_confidence", 0.0) for ans in evaluated_answers if ans.get("judgment") != "ERROR"]
     avg_confidence = sum(confidences) / len(confidences) if confidences else 0.0
     
-    # Calculate average judgment time
+    # Average judgment time
     judgment_times = [ans.get("judgment_time", 0.0) for ans in evaluated_answers]
     avg_judgment_time = sum(judgment_times) / len(judgment_times) if judgment_times else 0.0
-    
+
+    # Sum and average generation_time
+    generation_times = [ans.get("generation_time", 0.0) for ans in evaluated_answers if "generation_time" in ans]
+    sum_generation_time = sum(generation_times)
+    avg_generation_time = sum_generation_time / len(generation_times) if generation_times else 0.0
+
     return {
         "total_questions": total_questions,
         "correct_answers": correct_answers,
@@ -164,7 +164,9 @@ def calculate_accuracy_metrics(evaluated_answers: List[Dict[str, Any]]) -> Dict[
         "error_answers": error_answers,
         "accuracy": accuracy,
         "avg_confidence": avg_confidence,
-        "avg_judgment_time": avg_judgment_time
+        "avg_judgment_time": avg_judgment_time,
+        "sum_generation_time": sum_generation_time,
+        "avg_generation_time": avg_generation_time
     }
 
 
@@ -192,17 +194,17 @@ def save_accuracy_summary(metrics: Dict[str, Any], combination_info: Dict[str, A
     
     summary = {**combination_info, **metrics}
     
-    # Check if file exists to determine if we need to write headers
     file_exists = os.path.exists(output_path)
     
     with open(output_path, 'a') as f:
         if not file_exists:
-            # Write header
-            headers = ["dataset", "parser", "chunker", "overlap", "retriever", "model", "top_k", 
-                      "total_questions", "correct_answers", "accuracy", "avg_confidence", "avg_judgment_time"]
+            headers = [
+                "dataset", "parser", "chunker", "overlap", "retriever", "model", "top_k",
+                "total_questions", "correct_answers", "accuracy", "avg_confidence", "avg_judgment_time",
+                "sum_generation_time", "avg_generation_time"
+            ]
             f.write('\t'.join(headers) + '\n')
-        
-        # Write data row
+
         values = [
             str(summary.get("dataset", "")),
             str(summary.get("parser", "")),
@@ -215,7 +217,9 @@ def save_accuracy_summary(metrics: Dict[str, Any], combination_info: Dict[str, A
             str(summary.get("correct_answers", 0)),
             f"{summary.get('accuracy', 0.0):.4f}",
             f"{summary.get('avg_confidence', 0.0):.4f}",
-            f"{summary.get('avg_judgment_time', 0.0):.2f}"
+            f"{summary.get('avg_judgment_time', 0.0):.2f}",
+            str(summary.get('sum_generation_time', 0.0)),
+            str(summary.get('avg_generation_time', 0.0))
         ]
         f.write('\t'.join(values) + '\n')
 
@@ -228,14 +232,12 @@ def check_paths(base_dir: Path, datasets: List[str]) -> bool:
         print(f"❌ Generated answers directory not found: {generated_answers_base}")
         return False
     
-    # Check for dataset-specific paths
     for dataset in datasets:
         dataset_answers_dir = generated_answers_base / dataset
         if not dataset_answers_dir.exists():
             print(f"❌ Generated answers dataset directory not found: {dataset_answers_dir}")
             return False
         
-        # Check for answer files in dataset
         overlap_dirs = list(dataset_answers_dir.glob("overlap_*"))
         if not overlap_dirs:
             print(f"❌ No overlap directories found in {dataset_answers_dir}")
@@ -268,13 +270,12 @@ def check_existing_result(summary_file: str, combination_info: Dict[str, Any]) -
         with open(summary_file, 'r') as f:
             lines = f.readlines()
             
-        if len(lines) <= 1:  # Only header or empty file
+        if len(lines) <= 1:
             return False
             
-        # Check each line for matching combination
-        for line in lines[1:]:  # Skip header
+        for line in lines[1:]:
             fields = line.strip().split('\t')
-            if len(fields) >= 7:  # Ensure we have enough fields
+            if len(fields) >= 7:
                 if (fields[0] == combination_info["dataset"] and
                     fields[1] == combination_info["parser"] and
                     fields[2] == combination_info["chunker"] and
@@ -293,20 +294,18 @@ def process_combination(parser: str, chunker: str, overlap: int, retriever: str,
     """Process a single combination of parser, chunker, overlap, retriever, and model."""
     print(f"Processing: {parser}_{chunker} | overlap_{overlap} | {retriever} | {model} | top_k={top_k} | dataset={dataset}")
     
-    # Construct paths
     generated_answers_base = base_dir / "data" / "generated_answers" / dataset
+    if dataset == "tablequest":
+        generated_answers_base = base_dir / "data" / "generated_answers_tablequest" / dataset
     evaluation_output_base = base_dir / "evaluation" / "gen_accuracy" / dataset
     
-    # Input file (generated answers)
     model_filename = model.replace(':', '_')
     input_file = generated_answers_base / f"overlap_{overlap}" / f"{parser}_{chunker}" / retriever / f"{model_filename}_top{top_k}_answers.json"
     
-    # Output files
     output_dir = evaluation_output_base / f"overlap_{overlap}" / f"{parser}_{chunker}" / retriever
     detailed_output_file = output_dir / f"{model_filename}_top{top_k}_{judge_model.replace(':', '_')}_evaluation.json"
     summary_output_file = base_dir / "evaluation" / "gen_accuracy" / f"{dataset}_accuracy_summary.tsv"
     
-    # Check if results already exist (both detailed file and summary entry)
     combination_info = {
         "dataset": dataset,
         "parser": parser,
@@ -321,26 +320,31 @@ def process_combination(parser: str, chunker: str, overlap: int, retriever: str,
         print(f"  Skipping - results already exist for this combination")
         return
     
-    # Load generated answers
     generated_answers = load_generated_answers(str(input_file))
     if not generated_answers:
         print(f"  Skipping - no generated answers found in {input_file}")
         return
-    
-    print(f"  Loaded {len(generated_answers)} generated answers")
-    
-    # Evaluate answers using LLM-as-a-judge
-    evaluated_answers = evaluate_generated_answers(generated_answers, judge_model, dataset)
-    
-    # Calculate metrics
+
+    filtered_answers = [
+        ans for ans in generated_answers
+        if not (
+            ans.get("generated_answer") == "No retrieved context available" and
+            ans.get("num_retrieved_pages", None) == 0
+        )
+    ]
+
+    if not filtered_answers:
+        print(f"  Skipping - all questions have no context in {input_file}")
+        return
+
+    print(f"  Loaded {len(filtered_answers)} generated answers (after filtering)")
+
+    evaluated_answers = evaluate_generated_answers(filtered_answers, judge_model, dataset)
     metrics = calculate_accuracy_metrics(evaluated_answers)
-    
-    # Save detailed results
+
     save_evaluation_results(evaluated_answers, metrics, str(detailed_output_file))
-    
-    # Save summary for plotting/analysis
     save_accuracy_summary(metrics, combination_info, str(summary_output_file))
-    
+
     print(f"  ✅ Completed: {metrics['correct_answers']}/{metrics['total_questions']} correct (accuracy: {metrics['accuracy']:.3f})")
 
 
@@ -351,7 +355,6 @@ def main(parsers: List[str], chunkers: List[str], overlaps: List[int],
     for dataset in datasets:
         print(f"\n=== Evaluating dataset: {dataset} ===")
         
-        # Calculate and process all combinations
         total_combinations = len(overlaps) * len(retrievers) * len(models) * len(parsers) * len(chunkers) * len(top_ks)
         current_combination = 0
         
@@ -375,24 +378,28 @@ if __name__ == "__main__":
     print(f"🚀 Script started at: {script_start}")
     
     # =============================================================================
-    # CONFIGURATION - Edit these variables as needed
+    # CONFIGURATION
     # =============================================================================
     
-    # Base directory
-    BASE_DIR = Path(".")
+    BASE_DIR = Path("new_scripts")
+    JUDGE_MODEL = "gpt-4o-mini"  # OpenAI judge model
     
-    # Judge model
-    JUDGE_MODEL = "qwen2.5:14b"
-    
-    # Configuration lists - edit these to change what gets processed
-    DATASETS = ["financebench", "tablequest"]
-    PARSERS = ['pdfminer']
-    CHUNKERS = ['sentence']
+    DATASETS = ["financebench", "tablequest"]  # Options: "financebench", "tablequest"
+    PARSERS = ['pdfplumber']
+    CHUNKERS = ['neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"]  # Add: "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"
-    MODELS = ["gemma3:4b", "phi3:mini", "llama3.2:3b", "deepseek-r1:1.5b"]
-    TOP_KS = [1, 3]  # Top-K values to evaluate
+    RETRIEVERS = ["SpladeRetriever"]
+    MODELS = ["gpt-5"]
+    TOP_KS = [1, 3]
     
+    """
+    financebench 
+    "deepseek-r1:1.5b", "gemma3:4b", "llama3.2:3b", "smollm2:1.7b"] -> k=1 and k=3
+
+    tablequest 
+    "deepseek-r1:1.5b", "gemma3:4b", "llama3.2:3b", "smollm2:1.7b"] -> k=1 and k=3
+    """
+
     # =============================================================================
     # END CONFIGURATION
     # =============================================================================
@@ -408,14 +415,12 @@ if __name__ == "__main__":
     print(f"  Datasets: {DATASETS}")
     print(f"  Total combinations: {len(OVERLAPS) * len(RETRIEVERS) * len(MODELS) * len(PARSERS) * len(CHUNKERS) * len(TOP_KS) * len(DATASETS)}")
     
-    # Validate setup
     if not check_paths(BASE_DIR, DATASETS):
         print("❌ Setup validation failed. Please fix the issues before running.")
         exit(1)
     
     print("✅ Setup validation passed. Starting evaluation...")
     
-    # Run main processing
     main(PARSERS, CHUNKERS, OVERLAPS, RETRIEVERS, MODELS, TOP_KS, BASE_DIR, JUDGE_MODEL, DATASETS)
     
     script_end = datetime.datetime.now()
