@@ -41,7 +41,13 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 ## Directory Structure
 
 ```
-├── tablequest/                    # TableQuest dataset
+├├── tablequest/                    # TableQuest dataset
+│   ├── annotation/                # Annotation and verification scripts for QA validation
+│   │   ├── prompts/               # Prompt for automatic annotation tasks
+│   │   ├── verification_openai/   # OpenAI-based verification
+│   │   ├── analyze_vote_results.py
+│   │   ├── openai_voter.py
+│   │   └── README.md
 │   ├── metadata/                  # Page and table metadata, sampling information
 │   ├── prompts/                   # LLM prompt templates for different difficulty levels
 │   ├── qa_pairs/                  # JSON files with question-answer pairs
@@ -59,7 +65,7 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 │   ├── stats/                     # Stats utilities
 │   └── test/                      # End-to-end testing and evaluation
 ├── requirements.txt               # Python dependencies
-└── README.md                      # This file
+└── README.md                      # This file                 # This file
 ```
 
 ---

@@ -21,7 +21,7 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 ## Directory Structure
 
 ```
-├├── tablequest/                    # TableQuest dataset
+├── tablequest/                    # TableQuest dataset
 │   ├── annotation/                # Annotation and verification scripts for QA validation
 │   │   ├── prompts/               # Prompt for automatic annotation tasks
 │   │   ├── verification_openai/   # OpenAI-based verification
@@ -34,19 +34,6 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 │   ├── sampled_pages_pdf/         # Sampled pages organized by difficulty (PDF files)
 │   ├── scripts/                   # Data processing and QA generation scripts
 │   └── stats/                     # Statistics and analysis scripts/notebooks
-├── new_scripts/                   # Evaluation framework
-│   ├── chunkers/                  # Text chunking implementations
-│   ├── data/                      # Generated answers and intermediate files (parsing, chunking results... etc)
-│   ├── evaluation/                # Evaluation metrics and classes (retrieval and answer correctness)
-│   ├── generators/                # Answer generation modules
-│   ├── parsers/                   # PDF parsing implementations
-│   ├── preprocessing/             # Data preprocessing utilities
-│   ├── retrievers/                # Information retrieval methods (BM25, dense, hybrid, ColBert)
-│   ├── stats/                     # Stats utilities
-│   └── test/                      # End-to-end testing and evaluation
-├── requirements.txt               # Python dependencies
-└── README.md                      # This file
-
 ```
 
 ## Components
