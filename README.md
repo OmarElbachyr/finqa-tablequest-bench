@@ -100,23 +100,37 @@ python new_scripts/chunkers/chunkers.py
 #### 3. Information Retrieval & Evaluation
 ```bash
 # End-to-end indexing, retrieval & evaluation pipeline
-python new_scripts/test/retrieval_evaluation.py
+python new_scripts/test/retrieval_evaluation_openai..py
 ```
 
 #### 4. Answer Generation
+
+**FinanceBench Dataset:**
 ```bash
 # Generate answers using Ollama models
-python new_scripts/generators/ollama_answer_generation.py
+python new_scripts/generators/ollama_answer_generation_financebench.py
+
+# Generate answers using OpenAI models
+python new_scripts/generators/openai_generation_financebench.py
+```
+
+**TableQuest Dataset:**
+```bash
+# Generate answers using Ollama models
+python new_scripts/generators/ollama_answer_generation_tablequest.py
+
+# Generate answers using OpenAI models
+python new_scripts/generators/openai_generation_tablequest.py
 ```
 
 #### 5. Evaluation
 ```bash
 # Answer correctness evaluation
-python new_scripts/evaluation/llm_judge_evaluation.py
+python new_scripts/evaluation/llm_judge_evaluation_openai.py
 ```
 
 ### Supported Tools
 
 - **Parsers**: PyPDF2, PyMuPDF, pdfplumber, pypdfium2, docling, unstructured
 - **Chunkers**: token, sentence, semantic, recursive, SDPM, neural
-- **Retrievers**: BM25, dense embeddings, ColBERT, SPLADE, ColPali
+- **Retrievers**: BM25, dense embeddings, ColBERT, SPLADE
