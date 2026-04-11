@@ -54,7 +54,7 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 │   ├── sampled_pages_pdf/         # Sampled pages organized by difficulty (PDF files)
 │   ├── scripts/                   # Data processing and QA generation scripts
 │   └── stats/                     # Statistics and analysis scripts/notebooks
-├── new_scripts/                   # Evaluation framework
+├── src/                           # Evaluation framework
 │   ├── chunkers/                  # Text chunking implementations
 │   ├── data/                      # Generated answers and intermediate files (parsing, chunking results... etc)
 │   ├── evaluation/                # Evaluation metrics and classes (retrieval and answer correctness)
@@ -94,19 +94,19 @@ Note: If you encounter issues with installation, you can comment out the 'Layout
 #### 1. PDF Parsing
 ```bash
 # Parse PDF documents into text
-python new_scripts/parsers/text_parsers.py
+python src/parsers/text_parsers.py
 ```
 
 #### 2. Text Chunking
 ```bash
 # Chunk parsed text using different strategies
-python new_scripts/chunkers/chunkers.py
+python src/chunkers/chunkers.py
 ```
 
 #### 3. Information Retrieval & Evaluation
 ```bash
 # End-to-end indexing, retrieval & evaluation pipeline
-python new_scripts/test/retrieval_evaluation_openai..py
+python src/test/retrieval_evaluation_openai..py
 ```
 
 #### 4. Answer Generation
@@ -114,25 +114,25 @@ python new_scripts/test/retrieval_evaluation_openai..py
 **FinanceBench Dataset:**
 ```bash
 # Generate answers using Ollama models
-python new_scripts/generators/ollama_answer_generation_financebench.py
+python src/generators/ollama_answer_generation_financebench.py
 
 # Generate answers using OpenAI models
-python new_scripts/generators/openai_generation_financebench.py
+python src/generators/openai_generation_financebench.py
 ```
 
 **TableQuest Dataset:**
 ```bash
 # Generate answers using Ollama models
-python new_scripts/generators/ollama_answer_generation_tablequest.py
+python src/generators/ollama_answer_generation_tablequest.py
 
 # Generate answers using OpenAI models
-python new_scripts/generators/openai_generation_tablequest.py
+python src/generators/openai_generation_tablequest.py
 ```
 
 #### 5. Evaluation
 ```bash
 # Answer correctness evaluation
-python new_scripts/evaluation/llm_judge_evaluation_openai.py
+python src/evaluation/llm_judge_evaluation_openai.py
 ```
 
 ### Supported Tools
