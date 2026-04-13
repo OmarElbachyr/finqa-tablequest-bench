@@ -1,4 +1,7 @@
-# An Empirical Study of Retrieval‑Augmented Generation for Question Answering
+# Empirical Evaluation of PDF Parsing and Chunking for Financial Question Answering with RAG
+
+🚀 **Accepted at ICSE 2026 (SEIP track), Rio de Janeiro, Brazil.**  
+📄 **Paper:** [link to paper](https://drive.google.com/file/d/1eOXhH8-jTCC7cQnfzjqCvdmlle-FzbSb/view?usp=sharing)
 
 This repository contains the code, data, and experiments for our systematic study of how **PDF parsing** and **text chunking** choices affect end‑to‑end Retrieval‑Augmented Generation (RAG) performance on financial documents. It also hosts **TableQuest**, a new table‑focused QA benchmark built from real-world SEC filings and earnings reports.
 
