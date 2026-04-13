@@ -1,7 +1,7 @@
 from typing import Dict, List
 import numpy as np
 import ir_measures
-from ir_measures import *  # nDCG@k, P@k, ..
+from ir_measures import *
 
 class Evaluator_ir:
     """Light wrapper around *ir_measures* that prints and returns cut‑off metrics, MRR, and R‑Precision."""

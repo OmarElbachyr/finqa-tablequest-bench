@@ -10,22 +10,15 @@ from pathlib import Path
 import io
 import contextlib
 
- # =============================================================================
-# CONFIGURATION - Edit these variables as needed
-# =============================================================================
 
-# Configuration lists
-PARSERS = ['pdfminer', 'pymupdf'] # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
-CHUNKERS = ['token'] # 'token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'
-OVERLAPS = [0] # 0, 128, 256
-DATASET = "financebench"  # Change to your dataset name, e.g., "tablequest", "financebench"
+PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
+OVERLAPS = [0]
+DATASET = "financebench"  # Options: "tablequest" or "financebench"
 
 # Evaluation parameters
 k_values = [1, 3, 5, 10]
 
-# =============================================================================
-# END CONFIGURATION
-# =============================================================================
 
 def process_combination(parser: str, chunker: str, overlap: int, k_values: list):
     """Process a single combination of parser, chunker, and overlap."""

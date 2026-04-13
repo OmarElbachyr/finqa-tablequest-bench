@@ -314,13 +314,12 @@ def chunk_all_parsed_content(parsers, chunkers, input_base, output_base, chunk_s
      
 
 if __name__ == '__main__':
-    # Dataset selection: 'financebench' or 'tablequest'
-    dataset = 'financebench'  # Change to 'financebench' for the original dataset
+    dataset = 'financebench' # Dataset selection: 'financebench' or 'tablequest'
     
-    parsers=['pdfminer']  # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
-    chunkers=['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] # 'token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'
-    overlap_sizes = [0] #, 128, 256, 512] 
-    SKIP_EXISTING = True  # Set to False to recreate all files
+    parsers=['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+    chunkers=['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
+    overlap_sizes = [0]
+    SKIP_EXISTING = True
 
     input_base='src/data/parsed_pages',
     output_base='src/data/parsed_pages_chunks',
@@ -337,10 +336,3 @@ if __name__ == '__main__':
     chunk_all_parsed_content(parsers, chunkers, input_base, output_base, 
                              chunk_size=512, overlap_sizes=overlap_sizes, 
                              dataset=dataset, SKIP_EXISTING=SKIP_EXISTING)
-    """
-       ** For 'sentence' chunking, the `min_sentences_per_chunk` is set to 1.
-       ** For 'semantic' chunking, the `similarity_threshold` is set to 0.7.
-       ** For 'recursive' chunking, the `min_characters_per_chunk` is set to 24.
-       ** For 'sdpm' chunking, the `similarity_threshold` is set to 0.7 and `skip_window` is set to 1.
-       ** For 'neural' chunking, the `min_characters_per_chunk` is set to 24 and uses 'mirth/chonky_modernbert_base_1' model.
-    """

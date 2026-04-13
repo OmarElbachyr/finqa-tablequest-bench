@@ -196,6 +196,6 @@ def run(root="sampled_pages", output="qa_output"):
             json.dump(all_answers, f, ensure_ascii=False, indent=2)
 
 if __name__ == "__main__":
-    root = 'tablequest/sampled_pages'
-    output = 'tablequest/qa_pairs'
+    root = 'tablequest_dataset/sampled_pages'
+    output = 'tablequest_dataset/qa_pairs'
     run(root, output)

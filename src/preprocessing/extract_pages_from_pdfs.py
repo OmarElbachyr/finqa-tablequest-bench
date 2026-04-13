@@ -5,7 +5,7 @@ Script to extract specific pages from PDFs based on PNG filenames.
 This script:
 1. Scans all PNG files in tablequest_dataset/sampled_pages/{easy,medium,hard}/
 2. Extracts document name and page number from PNG filename
-3. Finds corresponding PDF in tablequest/sampled_pdfs/
+3. Finds corresponding PDF in tablequest_dataset/sampled_pages_pdf/
 4. Extracts the specific page and saves as individual PDF
 """
 

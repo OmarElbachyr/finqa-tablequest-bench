@@ -29,9 +29,9 @@ COLUMNS = [
 ]
 
 # Available parsers and chunkers
-PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'] # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
-CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] # 'token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'
-OVERLAP_SIZES = [0, 128, 256] # 0, 128, 256
+PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'] 
+CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] 
+OVERLAP_SIZES = [0, 128, 256] 
 
 
 # ---------------------------------------------------------------------------

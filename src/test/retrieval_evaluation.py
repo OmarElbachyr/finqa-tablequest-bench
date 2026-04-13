@@ -22,37 +22,12 @@ try:
 except ImportError:
     CUDA_AVAILABLE = False
 
-# =============================================================================
-# CONFIGURATION - Edit these variables as needed
-# =============================================================================
 
-# Configuration lists
-PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'] # 'pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'
-CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] # 'token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'
-OVERLAPS = [0, 256] # 0, 128, 256
-RETRIEVERS = ['BM25Retriever', 'ColBERTRetriever', 'SentenceTransformerRetriever', 'SpladeRetriever'] # 'BM25Retriever', 'ColBERTRetriever', 'SentenceTransformerRetriever', 'SpladeRetriever'
-DATASET = "tablequest"  # Change to your dataset name, e.g., "tablequest", "financebench"
-
-# =============================================================================
-# RETRIEVER CONFIGURATION - Customize retriever initialization and search parameters
-# =============================================================================
-# Configuration based on arguments used in the test scripts:
-# 
-# BM25Retriever:
-#   - No additional init args (only takes provider)
-#   - search_args: agg ('max', 'mean', 'sum')
-#
-# ColBERTRetriever:
-#   - init_args: model_name, device_map, batch_size, index_folder, index_name, override
-#   - search_args: k (-1 for all documents), agg
-#
-# SentenceTransformerRetriever:
-#   - init_args: model_name, device_map, is_instruct, task_description
-#   - search_args: agg
-#
-# SpladeRetriever:
-#   - init_args: model_name, device, batch_size, k_tokens_index
-#   - search_args: agg
+PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2'] 
+CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural'] 
+OVERLAPS = [0, 256] 
+RETRIEVERS = ['BM25Retriever', 'ColBERTRetriever', 'SentenceTransformerRetriever', 'SpladeRetriever'] 
+DATASET = "tablequest"  # # Options: "tablequest" or "financebench"
 
 # Retriever initialization parameters - specify custom arguments here
 RETRIEVER_CONFIGS = {
@@ -100,10 +75,6 @@ RETRIEVER_CONFIGS = {
 
 # Evaluation parameters
 k_values = [1, 3, 5, 10]
-
-# =============================================================================
-# END CONFIGURATION
-# =============================================================================
 
 def display_retriever_configurations():
     """Display the current retriever configurations."""

@@ -354,29 +354,18 @@ if __name__ == "__main__":
     script_start = datetime.datetime.now()
     print(f"🚀 Script started at: {script_start}")
     
-    # =============================================================================
-    # CONFIGURATION - Edit these variables as needed
-    # =============================================================================
-    
     # Base directory
     BASE_DIR = Path("src")
     
-    # Configuration lists - edit these to change what gets processed
-    DATASETS = ["financebench"] # "financebench",
-    # PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
-    PARSERS = ['pdfplumber']
-    # CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
-    CHUNKERS = ['neural']
+    DATASETS = ["financebench", "tablequest"]
+    PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+    CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"]  # Add: "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"
+    RETRIEVERS = ["BM25Retriever", "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"]
     MODELS = ["gpt-5"] # swapped to OpenAI models
     
     # Number of top pages to use as context
     TOP_K = 1
-    
-    # =============================================================================
-    # END CONFIGURATION
-    # =============================================================================
     
     print(f"Configuration:")
     print(f"  Parsers: {PARSERS}")

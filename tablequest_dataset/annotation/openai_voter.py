@@ -1,6 +1,6 @@
 #!/usr/bin/env python3
 """
-Simplified LLM Voting Verification Script for TableQuest QA Pairs (OpenAI version, relative paths)
+Simplified LLM Voting Verification Script for TableQuest QA Pairs (OpenAI version)
 
 This script uses multiple OpenAI models to verify the correctness of QA pairs
 by showing them the image and generated question/answer. Uses majority voting
@@ -55,8 +55,8 @@ class OpenAIVotingVerifier:
             return None
 
     def _create_verification_prompt(self, qa_item: Dict[str, Any], difficulty: str) -> str:
-        """Create a prompt for LLM verification from voting_prompt.txt."""
-        prompt_path = Path("tablequest/annotation/prompts/voting_prompt.txt")
+        """Create a prompt for LLM verification."""
+        prompt_path = Path("tablequest_dataset/annotation/prompts/voting_prompt.txt")
         with open(prompt_path, "r") as f:
             template = f.read()
 
@@ -138,7 +138,7 @@ class OpenAIVotingVerifier:
 
     async def verify_dataset(self, difficulty: str, max_items: int = None) -> Dict[str, Any]:
         """Verify all QA pairs for a given difficulty."""
-        qa_file = Path("tablequest") / "qa_pairs" / f"{difficulty}.json"
+        qa_file = Path("tablequest_dataset") / "qa_pairs" / f"{difficulty}.json"
         with open(qa_file, "r") as f:
             qa_data = json.load(f)
 
@@ -178,7 +178,7 @@ async def main():
     LIMIT = None  # e.g. LIMIT = 50
 
     timestamp = datetime.now().strftime("%Y%m%d_%H%M%S")
-    OUTPUT_FILE = Path("tablequest") / "annotation" / "verification_openai" / f"verification_{DIFFICULTY}_{timestamp}.json"
+    OUTPUT_FILE = Path("tablequest_dataset") / "annotation" / "verification_openai" / f"verification_{DIFFICULTY}_{timestamp}.json"
 
     verifier = OpenAIVotingVerifier(models=MODELS)
     results = await verifier.verify_dataset(DIFFICULTY, max_items=LIMIT)

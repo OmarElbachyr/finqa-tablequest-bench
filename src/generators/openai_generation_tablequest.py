@@ -333,11 +333,11 @@ if __name__ == "__main__":
     
     BASE_DIR = Path("src")
     
-    DATASETS = ["tablequest"] 
-    PARSERS = ['pdfplumber']
-    CHUNKERS = ['neural']
+    DATASETS = ["financebench", "tablequest"] 
+    PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+    CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"]  
+    RETRIEVERS = ["BM25Retriever", "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"]  
     MODELS = ["gpt-5"]  
 
     TOP_K = 3

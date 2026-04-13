@@ -17,7 +17,6 @@ if not hasattr(ImageFont.FreeTypeFont, 'getsize'):
         return (bbox[2] - bbox[0], bbox[3] - bbox[1])
     ImageFont.FreeTypeFont.getsize = _getsize
 
-# Configuration
 SAMPLED_PDF_DIR = "financebench"
 METADATA_CSV_PATH = "tablequest/metadata/all_extracted_pages_metadata.csv"  # Path for the output CSV
 VISUAL_THRESHOLD = 1  # Minimum number of tables per page

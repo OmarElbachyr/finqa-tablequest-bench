@@ -10,14 +10,8 @@ from pathlib import Path
 import io
 import contextlib
 
-# =============================================================================
-# CONFIGURATION
-# =============================================================================
-DATASET = "financebench"  # Change to your dataset name, e.g., "tablequest", "financebench"
 
-# =============================================================================
-# END CONFIGURATION
-# =============================================================================
+DATASET = "financebench"  # Options: "tablequest" or "financebench"
 
 if __name__ == "__main__":
     csv_path = f"src/data/chunks/{DATASET}/overlap_0/pdfminer_token_chunked_pages.csv"
@@ -47,7 +41,7 @@ if __name__ == "__main__":
     
     # Determine output directory based on csv_path and dataset
     csv_path_obj = Path(csv_path)
-        out_dir = Path("src/data/retrieved_pages") / DATASET / csv_path_obj.parent.name / csv_path_obj.stem.replace("_chunked_pages", "")
+    out_dir = Path("src/data/retrieved_pages") / DATASET / csv_path_obj.parent.name / csv_path_obj.stem.replace("_chunked_pages", "")
     out_dir.mkdir(parents=True, exist_ok=True)
     
     output_file = out_dir / f"{retriever.__class__.__name__}_run_sorted.json"

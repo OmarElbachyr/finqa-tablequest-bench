@@ -43,7 +43,7 @@ python3 openai_voter.py
 
 ## Output
 
-Results are saved to: `tablequest_dataset/annotation/verification_openai/verification_{DIFFICULTY}.json`
+Results are saved to: `tablequest_dataset/annotation/verification_openai/verification_{DIFFICULTY}_{TIMESTAMP}.json`
 
 Each result includes:
 - **item**: Original QA pair with image, question, and answer

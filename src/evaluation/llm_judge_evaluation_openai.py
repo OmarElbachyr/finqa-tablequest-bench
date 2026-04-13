@@ -377,32 +377,16 @@ if __name__ == "__main__":
     script_start = datetime.datetime.now()
     print(f"🚀 Script started at: {script_start}")
     
-    # =============================================================================
-    # CONFIGURATION
-    # =============================================================================
-    
     BASE_DIR = Path("src")
-    JUDGE_MODEL = "gpt-4o-mini"  # OpenAI judge model
+    JUDGE_MODEL = "gpt-4o-mini" 
     
     DATASETS = ["financebench", "tablequest"]  # Options: "financebench", "tablequest"
-    PARSERS = ['pdfplumber']
-    CHUNKERS = ['neural']
+    PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+    CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"]
+    RETRIEVERS = ["BM25Retriever", "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"]
     MODELS = ["gpt-5"]
     TOP_KS = [1, 3]
-    
-    """
-    financebench 
-    "deepseek-r1:1.5b", "gemma3:4b", "llama3.2:3b", "smollm2:1.7b"] -> k=1 and k=3
-
-    tablequest 
-    "deepseek-r1:1.5b", "gemma3:4b", "llama3.2:3b", "smollm2:1.7b"] -> k=1 and k=3
-    """
-
-    # =============================================================================
-    # END CONFIGURATION
-    # =============================================================================
     
     print(f"Configuration:")
     print(f"  Judge Model: {JUDGE_MODEL}")

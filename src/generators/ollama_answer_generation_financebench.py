@@ -351,29 +351,23 @@ if __name__ == "__main__":
     script_start = datetime.datetime.now()
     print(f"🚀 Script started at: {script_start}")
     
-    # =============================================================================
-    # CONFIGURATION - Edit these variables as needed
-    # =============================================================================
+
     
     # Base directory
     BASE_DIR = Path(".")
     
-    # Configuration lists - edit these to change what gets processed
-    DATASETS = ["financebench"] # "financebench",
-    # PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
-    PARSERS = ['pdfplumber']
-    # CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
-    CHUNKERS = ['neural']
+
+    DATASETS = ["financebench", "tablequest"]
+    PARSERS = ['pdfminer', 'pymupdf', 'pypdf2', 'unstructured', 'pdfplumber', 'pypdfium2']
+    CHUNKERS = ['token', 'sentence', 'semantic', 'recursive', 'sdpm', 'neural']
     OVERLAPS = [128]
-    RETRIEVERS = ["SpladeRetriever"] 
+    RETRIEVERS = ["BM25Retriever", "ColBERTRetriever", "SentenceTransformerRetriever", "SpladeRetriever"] 
     MODELS = ["gemma3:12b", "gemma3:27b", "qwen2.5:3b", "qwen2.5:14b", "phi4:14b"] 
     
     # Number of top pages to use as context
     TOP_K = 3
     
-    # =============================================================================
-    # END CONFIGURATION
-    # =============================================================================
+
     
     print(f"Configuration:")
     print(f"  Parsers: {PARSERS}")

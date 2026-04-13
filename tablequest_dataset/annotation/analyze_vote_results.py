@@ -45,7 +45,7 @@ def compute_stats(json_file):
         print(f"{pattern}: {count} ({count/total*100:.1f}%)")
 
 if __name__ == "__main__":
-    for diffuculty in ["easy", "medium", "hard"]:
-        print(f"=== Difficulty: {diffuculty} ===")
-        compute_stats(f"tablequest/annotation/verification_openai/verification_{diffuculty}.json")
+    for difficulty in ["easy", "medium", "hard"]:
+        print(f"=== Difficulty: {difficulty} ===")
+        compute_stats(f"tablequest_dataset/annotation/verification_openai/verification_{difficulty}.json")
         print("      ============================\n")
