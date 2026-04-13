@@ -31,6 +31,7 @@ The dataset is organized into three difficulty tiers based on the cognitive comp
 │   ├── metadata/                  # Page and table metadata, sampling information
 │   ├── prompts/                   # LLM prompt templates for different difficulty levels
 │   ├── qa_pairs/                  # JSON files with question-answer pairs
+│   ├── sampled_pages/             # Sampled page images organized by difficulty
 │   ├── sampled_pages_pdf/         # Sampled pages organized by difficulty (PDF files)
 │   ├── scripts/                   # Data processing and QA generation scripts
 │   └── stats/                     # Statistics and analysis scripts/notebooks

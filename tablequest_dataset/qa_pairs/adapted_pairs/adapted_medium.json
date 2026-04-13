@@ -298,7 +298,7 @@
                 ],
                 "difficulty": "medium",
                 "cot": "1. Identify the 'WW Operational' growth percentages for 'Pharmaceutical' and 'MedTech' segments from the table.\\n2. 'Pharmaceutical' has a 'WW Operational' growth of 6.7%.\\n3. 'MedTech' has a 'WW Operational' growth of 6.2%.\\n4. Calculate the difference: 6.7% - 6.2% = 0.5%.\\n5. The difference is 0.5%.",
-                "table_loc": "tablequest/qa_pairs/medium",
+                "table_loc": "tablequest_dataset/qa_pairs/medium",
                 "report_type": "EARNINGS"
             }
         ]
